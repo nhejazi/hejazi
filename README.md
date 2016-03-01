@@ -1,2 +1,2 @@
-# hejazi
-a home for convenience functions that I write...to be...
+# R/hejazi
+__under development__
