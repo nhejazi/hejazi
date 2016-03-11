@@ -1,2 +1,3 @@
-# R/hejazi
-__under development__
+# R/nima
+
+An R package for my convenience functions. __Currently under development.__
