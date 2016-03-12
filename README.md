@@ -6,8 +6,8 @@ __Currently under development.__
 
 ---
 
-R/nima is an [R](http://www.r-project.org) package with miscellaneous R convenience functions
-that are useful to me.
+R/nima is an [R](http://www.r-project.org) package that houses 
+miscellaneous convenience functions that are useful to me.
 
 ---
 
