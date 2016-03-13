@@ -1,18 +1,16 @@
-#  cf
-#' Compare objects, including missing data pattern
 #'
-#' Check whether two objects are the same, including their patterns of \code{NA}s.
+#' Compare two similar objects, including the pattern of missing data.
+#'
+#' Check whether two objects are the same, including patterns of \code{NA}s.
 #'
 #' @aliases cf.default cf.list
 #'
-#' @param a Some object.
+#' @param a An object of a given type.
 #'
-#' @param b Another object
-#'
-#' @details
-#' It's not very complicated: \code{((is.na(a) & is.na(b)) | (!is.na(a) & !is.na(b) & a == b))}
+#' @param b An object similar in type to the above.
 #'
 #' @export
+#'
 #' @return
 #' Boolean object with \code{TRUE} indicating an element is the same.
 #'
@@ -42,9 +40,9 @@
 #' y <- as.list(y)
 #' sapply(cf(x,y), function(a) sum(!a))
 #'
-#' @keywords
-#' data
-cf <- function(a, b) UseMethod("cf")
+#' @keywords data
+
+compare <- function(a, b) UseMethod("cf")
 
 #' @export
 cf.default <-
