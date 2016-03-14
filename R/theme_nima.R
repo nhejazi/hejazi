@@ -5,30 +5,29 @@
 #' @param base_size Base font size
 #' @param base_family Base font family
 #' @param ... Passed to \code{\link[ggplot2]{theme}}
+#
+#' @export
 #'
 #' @return An object as returned by \code{\link[ggplot2]{theme}}
-#'
 #'
 #' @examples
 #' library(ggplot2)
 #' mtcars$cyl <- factor(mtcars$cyl)
-#' ggplot(mtcars, aes(y=mpg, x=disp, color=cyl)) +
-#'     geom_point() + theme_karl()
+#' ggplot(mtcars, aes(y=mpg, x = disp, color = cyl)) + geom_point() + theme_nima()
 #'
-#' @seealso \code{\link[ggplot2]{theme}}
-#'
-#' @export
-theme_nima <-
-    function(base_size = 12, base_family = "", ...)
-{
-    ggplot2::"%+replace%"(
-        ggplot2::theme_grey(base_size = base_size, base_family = base_family) ,
+#' @seealso
+#' \code{\link[ggplot2]{theme}}
 
-        ggplot2::theme(axis.ticks.length=grid::unit(0, "cm"),
-                       panel.border=ggplot2::element_rect(fill=NA, color="black"),
-                       strip.background=ggplot2::element_rect(fill="gray80", color="black"),
-                       ...)
-        )
+
+theme_nima <- function(base_size = 12, base_family = "", ...) {
+    ggplot2::"%+replace%"(
+      ggplot2::theme_grey(base_size = base_size, base_family = base_family),
+      ggplot2::theme(axis.ticks.length = grid::unit(0, "cm"),
+                     panel.border = ggplot2::element_rect(fill = NA,
+                                                          color = "black"),
+                     strip.background=ggplot2::element_rect(fill="gray80",
+                                                            color="black"), ...)
+      )
 }
 
 #' @rdname theme_nima

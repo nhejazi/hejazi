@@ -1,61 +1,54 @@
-#' A Function to Change Directories using UNIX Shorthand
+#' Exit R Without Saving
 #'
-#' This function allows you to change directories with 'cd'.
-#' @param dir Where do you want to go relative to the home directory? 
-#'        No defaults, so the target path must be specified in full.
-#'        Tilde expansion is performed when possible (OS X and Linux).
-#' @keywords
-#' @export
-#' @examples
-#' cd()
- 
-cd <- function(dir) {
-    if (getwd() != paste0(path.expand("~"),"/",dir)) {
-        setwd(paste0(path.expand("~"),"/",dir))
-    } else {
-        print("You are already there.")
-    }
-}
-
-#' exit R without saving
+#' Exit R without saving workspace using UNIX syntax.
 #'
-#' exit R without saving workspace.
-#'
-#' @details This just calls \code{q("no")}
+#' @details This function is merely a call to \code{q("no")}.
 #'
 #' @export
-#' @return None.
-#' @keywords utilities
 
 exit <- function() q("no")
 
 
-#  h
+#' View HTML Version of Help Files
 #'
-#' View html version of help file
-#'
-#' View the html version of a help file while running R via ESS within emacs.
+#' View the HTML version of a help file while running R from the terminal.
 #'
 #' @param ... Help topics.
 #'
 #' @details
-#' This just calls the function \code{\link[utils]{help}} using the
-#'   argument \code{htmlhelp=TRUE}.
+#' Calls function \code{\link[utils]{help}} using argument \code{htmlhelp=TRUE}.
 #'
 #' @export
-#' @return
-#' No return value.
 #'
 #' @examples
-#' h(read.cross)
+#' hweb(read.cross)
 #'
 #' @seealso
 #' \code{\link[utils]{help}}, \code{\link[utils]{help.start}}
 #'
 #' @keywords
 #' documentation
-h <-
-    function(...)
-{
-    utils::help(..., help_type="html")
+
+hweb <- function(...) {
+    utils::help(..., help_type = "html")
+}
+
+
+#' Open a File
+#'
+#' Open a file using \code{\link[base]{system}} and \code{open}.
+#'
+#' @param file File name (as character string).
+#'
+#' @details I'd thought that to open a file you'd use \code{open} in MacOS and
+#' \code{start} in Windows, but \code{system("start myfile.pdf")} doesn't work
+#' work in Windows, but rather \code{system("open myfile.pdf")} does.
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{openfile("myplot.pdf")}
+
+openfile <- function(file) {
+    system( paste("open", file) )
 }

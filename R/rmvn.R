@@ -1,39 +1,32 @@
-#  rmvn
+#' Simulate Multivariate Normal
 #'
-#' Simulate multivariate normal
-#'
-#' Simulate from a multivariate normal distribution.
+#' Simulate random variables from a multivariate normal distribution.
 #'
 #' @param n Number of simulation replicates.
-#'
 #' @param mu Mean vector.
-#'
-#' @param V Variance-covariance matrix.
+#' @param sigma Variance-covariance matrix.
 #'
 #' @details
-#' Uses the Cholesky decomposition of the matrix \code{V}, obtained by
-#'   \code{\link[base]{chol}}.
+#' Use Cholesky decomposition of \code{sigma}, from \code{\link[base]{chol}}.
 #'
 #' @importFrom stats rnorm
+#'
 #' @export
+#'
 #' @return
-#' A matrix of size n x \code{length(mu)}.  Each row corresponds to a
-#'   separate replicate.
+#' Matrix of size n by \code{length(mu)}, each row corresponding to a replicate.
 #'
 #' @examples
-#' x <- rmvn(100, c(1,2),matrix(c(1,1,1,4),ncol=2))
+#' x <- rmvn(100, c(1,2), matrix(c(1,1,1,4), ncol = 2))
 #'
 #' @seealso
 #' \code{\link[stats]{rnorm}}
-#'
-#' @keywords
-#' datagen
-rmvn <-
-    function(n, mu=0, V=matrix(1))
-{
+
+rmvn <- function(n, mu = 0, sigma = matrix(1)) {
     p <- length(mu)
-    if(any(is.na(match(dim(V),p))))
-        stop("Dimension problem!")
-    D <- chol(V)
-    matrix(rnorm(n*p),ncol=p) %*% D + rep(mu,rep(n,p))
+    if(any(is.na(match(dim(sigma), p)))) {
+      stop("Dimension problem!")
+    }
+    D <- chol(sigma)
+    matrix(rnorm(n * p), ncol = p) %*% D + rep(mu, rep(n, p))
 }

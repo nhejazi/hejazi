@@ -7,11 +7,12 @@
 #'
 #' @return The maximum of the absolute values of elements of the input vector.
 #'
+#' @export
+#'
 #' @examples
 #' x <- c(5, 3, -9, -100, 3.14159, 7.5)
 #' maxabs(x)
-#' @export
 
 absmax <- function(x, na.rm = FALSE) {
-    max(abs(x), na.rm=na.rm)
+    max(abs(x), na.rm = na.rm)
 }
