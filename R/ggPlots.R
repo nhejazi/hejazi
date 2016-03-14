@@ -1,3 +1,12 @@
+utils::globalVariables(c("aes", ".fitted", ".resid", "geom_point", ".stdresid",
+                       "geom_hline", "xlab", "ylab", "ggtitle", "stat_smooth",
+                       "geom_abline", ".cooksd", "geom_bar", ".hat", "theme",
+                       "scale_size_continuous", "z", "ord.x", "geom_point",
+                       "geom_ribbon", "lower", "upper", "geom_text", "label",
+                       "cens", "surv", "geom_step", "up", "low", "theme_bw",
+                       "group", "scale_colour_manual", "scale_colour_discrete",
+                       "scale_linetype_manual"))
+
 #' Quantile-Quantile Plots with ggplot2
 #'
 #' Produce standard quantile-quantile plots for modeling using ggplot2.
@@ -13,9 +22,9 @@
 #' n <- 10; x1 <- rnorm(n); y1 <- rnorm(n)
 #' linmod <- lm(y1 ~ x1)
 #' x <- linmod$residuals
-#' qqlmPlot_gg(x)
+#' qqPlot_gg(x)
 
-qqlmPlot_gg <- function(x, distribution = "norm", ..., line.estimate = NULL,
+qqPlot_gg <- function(x, distribution = "norm", ..., line.estimate = NULL,
                       conf = 0.95, labels = names(x)) {
   q.function <- eval(parse(text = paste0("q", distribution)))
   d.function <- eval(parse(text = paste0("d", distribution)))
@@ -71,9 +80,9 @@ qqlmPlot_gg <- function(x, distribution = "norm", ..., line.estimate = NULL,
 #' @examples
 #' n <- 10; x1 <- rnorm(n); y1 <- rnorm(n)
 #' linmod <- lm(y1 ~ x1)
-#' diaglmPlot_gg(linmod)
+#' lmPlots_gg(linmod)
 
-diaglmPlot_gg <- function(model) {
+lmPlots_gg <- function(model) {
   p1 <- ggplot(model, aes(.fitted, .resid)) + geom_point()
   p1 <- p1 + stat_smooth(method = "loess") +
              geom_hline(yintercept = 0, col = "red", linetype = "dashed")
@@ -127,11 +136,14 @@ diaglmPlot_gg <- function(model) {
 #' @param main A main label for the survival plot, no default.
 #'
 #' @importFrom ggplot2 ggplot
+#' @importFrom survival survfit Surv
 #'
 #' @export
 #'
 #' @examples
-#' s <- km
+#' hmohiv <- read.table("http://www.ats.ucla.edu/stat/r/examples/asa/hmohiv.csv", sep=",", header = TRUE)
+#' mini <- hmohiv[ID <= 5, ]
+#' s <- survfit(Surv(mini$time, mini$censor) ~ 1)
 #' survPlot_gg(s)
 
 survPlot_gg <- function(s, CI = "def", plot.cens = TRUE, surv.col = "gg.def",

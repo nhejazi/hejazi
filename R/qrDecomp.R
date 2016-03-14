@@ -16,14 +16,14 @@
 #' @examples
 #' hilbert <- function(n) { i <- 1:n; 1/outer(i-1,i,"+") }
 #' h5 <- hilbert(5);
-#' qrMat(h5)
+#' qrD(h5)
 #'
 #' @seealso
 #' \code{\link[base]{qr}}
 #'
 #' @keywords linear algebra
 
-qrMat <- function(x, tol = 1e-7) {
+qrD <- function(x, tol = 1e-7) {
 
     qq <- qr(x, tol = tol)
     p <- ncol(x)

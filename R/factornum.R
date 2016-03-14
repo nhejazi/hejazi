@@ -9,12 +9,12 @@
 #' @export
 #'
 #' @examples
-#' x <- factor(c(3, 4, 9, 4, 9), levels=c(3,4,9))
-#' fac_num(x)
+#' x <- factor(c(3, 4, 9, 4, 9), levels = c(3,4,9))
+#' factornum(x)
 
-fac_num <- function(x) {
-    fac_names <- names(x)
+factornum <- function(x) {
+    factornames <- names(x)
     x <- as.numeric(as.character(x))
-    names(x) <- fac_names
+    names(x) <- factornames
     return(x)
 }

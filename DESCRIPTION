@@ -1,22 +1,20 @@
 Package: nima
 Title: Nima Hejazi's R Code
-Version: 0.1-7
-Authors@R: person("Nima", "Hejazi", email = "nhejazi@berkeley.edu", 
+Version: 0.1-9
+Authors@R: person("Nima", "Hejazi", email = "nhejazi@berkeley.edu",
 		  role = c("aut", "cre"))
 Description: Miscellaneous functions that make life a little bit easier.
 Depends:
     R (>= 3.2.3)
 Imports:
-	MASS,
+	plyr,
 	utils,
 	stats,
 	survival,
-	graphics,
-	grDevices,
-	assertthat,
 	gridExtra,
-    	ggplot2,
-    	grid
+	assertthat,
+  ggplot2,
+  grid
 Suggests:
 	devtools,
 	testthat,
