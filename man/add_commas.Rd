@@ -2,7 +2,7 @@
 % Please edit documentation in R/add_commas.R
 \name{add_commas}
 \alias{add_commas}
-\title{Add commas to a large number}
+\title{Add Commas to a Large Number}
 \usage{
 add_commas(numbers)
 }
@@ -13,7 +13,7 @@ add_commas(numbers)
 Character string with numbers written like \code{"7,547,085"}.
 }
 \description{
-Convert a number to a string, with commas every 3rd digit
+Convert a number to a string, with commas inserted at every 3rd digit.
 }
 \examples{
 add_commas(c(231, 91310, 2123, 9911001020, 999723285))

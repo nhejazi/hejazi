@@ -2,18 +2,14 @@
 % Please edit documentation in R/utilities.R
 \name{exit}
 \alias{exit}
-\title{exit R without saving}
+\title{Exit R Without Saving}
 \usage{
 exit()
 }
-\value{
-None.
-}
 \description{
-exit R without saving workspace.
+Exit R without saving workspace using UNIX syntax.
 }
 \details{
-This just calls \code{q("no")}
+This function is merely a call to \code{q("no")}.
 }
-\keyword{utilities}
 

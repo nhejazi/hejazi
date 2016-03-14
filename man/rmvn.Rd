@@ -2,34 +2,31 @@
 % Please edit documentation in R/rmvn.R
 \name{rmvn}
 \alias{rmvn}
-\title{Simulate multivariate normal}
+\title{Simulate Multivariate Normal}
 \usage{
-rmvn(n, mu = 0, V = matrix(1))
+rmvn(n, mu = 0, sigma = matrix(1))
 }
 \arguments{
 \item{n}{Number of simulation replicates.}
 
 \item{mu}{Mean vector.}
 
-\item{V}{Variance-covariance matrix.}
+\item{sigma}{Variance-covariance matrix.}
 }
 \value{
-A matrix of size n x \code{length(mu)}.  Each row corresponds to a
-  separate replicate.
+Matrix of size n by \code{length(mu)}, each row corresponding to a replicate.
 }
 \description{
-Simulate from a multivariate normal distribution.
+Simulate random variables from a multivariate normal distribution.
 }
 \details{
-Uses the Cholesky decomposition of the matrix \code{V}, obtained by
-  \code{\link[base]{chol}}.
+Use Cholesky decomposition of \code{sigma}, from \code{\link[base]{chol}}.
 }
 \examples{
-x <- rmvn(100, c(1,2),matrix(c(1,1,1,4),ncol=2))
+x <- rmvn(100, c(1,2), matrix(c(1,1,1,4), ncol = 2))
 
 }
 \seealso{
 \code{\link[stats]{rnorm}}
 }
-\keyword{datagen}
 

@@ -2,26 +2,22 @@
 % Please edit documentation in R/attribute_names.R
 \name{attrnames}
 \alias{attrnames}
-\title{Get names of attributes}
+\title{Get Names of Attributes}
 \usage{
-attrnames(object)
+attrnames(obj)
 }
 \arguments{
-\item{object}{Any object}
+\item{obj}{Any object.}
 }
 \value{
 Vector of character strings with the names of the attributes.
 }
 \description{
-Get the names of the attributes of an object
-}
-\details{
-It just does \code{names(attributes(object))}.
+Get the names of the attributes of an input object.
 }
 \examples{
 x <- matrix(1:100, ncol=5)
 colnames(x) <- LETTERS[1:5]
 attrnames(x)
 }
-\keyword{utilities}
 
