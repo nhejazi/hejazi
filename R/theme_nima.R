@@ -5,7 +5,9 @@
 #' @param base_size Base font size
 #' @param base_family Base font family
 #' @param ... Passed to \code{\link[ggplot2]{theme}}
-#
+#'
+#' @importFrom ggplot2 ggplot
+#'
 #' @export
 #'
 #' @return An object as returned by \code{\link[ggplot2]{theme}}

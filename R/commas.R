@@ -4,13 +4,13 @@
 #'
 #' @param numbers Vector of non-negative numbers (will be rounded to integers)
 #'
-#' @return Character string with numbers written like \code{"7,547,085"}.
+#' @return Character string with numbers written like \code{"5,771,009"}.
 #'
 #' @export
 #'
 #' @examples
-#' add_commas(c(231, 91310, 2123, 9911001020, 999723285))
+#' commas(c(2300, 9000, 21456, 987654890, 1256787, 345765, 1432))
 
-add_commas <- function(numbers) {
+commas <- function(numbers) {
     format(numbers, big.mark = ",", scientific = FALSE, trim = TRUE)
 }
