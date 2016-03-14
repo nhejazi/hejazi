@@ -19,7 +19,7 @@ Suggests:
 	devtools,
 	testthat,
 	roxygen2
-License: MIT
+License: MIT + file LICENSE
 URL: https://github.com/nhejazi/nima
 LazyData: true
 RoxygenNote: 5.0.1

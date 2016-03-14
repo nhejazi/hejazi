@@ -16,7 +16,7 @@ utils::globalVariables(c("aes", ".fitted", ".resid", "geom_point", ".stdresid",
 #'
 #' @importFrom ggplot2 ggplot
 #'
-#' @export
+#' @export qqPlot_gg
 #'
 #' @examples
 #' n <- 10; x1 <- rnorm(n); y1 <- rnorm(n)
@@ -70,12 +70,12 @@ qqPlot_gg <- function(x, distribution = "norm", ..., line.estimate = NULL,
 #'
 #' Produce standard diagnostic plots for linear models using ggplot2.
 #'
-#' @param model A linear model object produced by \code{lm()} or \code{glm()}.
+#' @param model A linear model object produced by \code{lm()}.
 #'
 #' @importFrom ggplot2 ggplot
 #' @importFrom gridExtra grid.arrange
 #'
-#' @export
+#' @export lmPlots_gg
 #'
 #' @examples
 #' n <- 10; x1 <- rnorm(n); y1 <- rnorm(n)
@@ -87,18 +87,16 @@ lmPlots_gg <- function(model) {
   p1 <- p1 + stat_smooth(method = "loess") +
              geom_hline(yintercept = 0, col = "red", linetype = "dashed")
   p1 <- p1 + xlab("Fitted values") + ylab("Residuals") +
-             ggtitle("Residual vs Fitted")
+             ggtitle("Residual vs. Fitted")
 
-  p2 <- ggplot(model, aes(qqnorm(.stdresid)[[1]], .stdresid)) +
-        geom_point(na.rm = TRUE)
-  p2 <- p2 + geom_abline(aes(qqline(.stdresid))) +
-             xlab("Theoretical Quantiles") + ylab("Std. Residuals")
-  p2 <- p2 + ggtitle("Normal Q-Q")
+  p2 <- ggplot(model,aes(sample=.stdresid)) + geom_point(stat = "qq") +
+        geom_abline() + xlab("Theoretical Quantiles") + ylab("Std. Residuals") +
+        ggtitle("Gausian Q-Q")
 
   p3 <- ggplot(model, aes(.fitted, sqrt(abs(.stdresid)))) +
         geom_point(na.rm = TRUE)
   p3 <- p3 + stat_smooth(method = "loess", na.rm = TRUE) + xlab("Fitted Value")
-  p3 <- p3 + ylab(expression(sqrt("|Standardized residuals|")))
+  p3 <- p3 + ylab(expression(sqrt("|Std. residuals|")))
   p3 <- p3 + ggtitle("Scale-Location")
 
   p4 <- ggplot(model, aes(seq_along(.cooksd), .cooksd)) +
@@ -138,7 +136,7 @@ lmPlots_gg <- function(model) {
 #' @importFrom ggplot2 ggplot
 #' @importFrom survival survfit Surv
 #'
-#' @export
+#' @export survPlot_gg
 #'
 #' @examples
 #' hmohiv <- read.table("http://www.ats.ucla.edu/stat/r/examples/asa/hmohiv.csv", sep=",", header = TRUE)

@@ -7,7 +7,7 @@
 lmPlots_gg(model)
 }
 \arguments{
-\item{model}{A linear model object produced by \code{lm()} or \code{glm()}.}
+\item{model}{A linear model object produced by \code{lm()}.}
 }
 \description{
 Produce standard diagnostic plots for linear models using ggplot2.

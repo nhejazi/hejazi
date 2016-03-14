@@ -2,8 +2,6 @@
 % Please edit documentation in R/compare.R
 \name{compFun}
 \alias{compFun}
-\alias{compFun.default}
-\alias{compFun.list}
 \title{Compare Two Similar Objects including Missing Data Patterns.}
 \usage{
 compFun(a, b)
@@ -29,20 +27,12 @@ x[sample(seq(along = x), 100)] <- NA
 all(compFun(x,x))
 dim(compFun(x,x))
 
-x <- as.list(x)
+x <- as.list(c(5, 8, 9, NA, 3, NA))
 y <- as.list(y)
 sapply(compFun(x,y), function(a) sum(!a))
 
 x <- as.data.frame(x)
 y <- as.data.frame(y)
-sum(!compFun(x,y))
-
-y <- x
-y[4,8] <- NA
-sum(!compFun(x,y))
-y[6,2] <- 18
-sum(!compFun(x,y))
-y[6,5] <- 32
 sum(!compFun(x,y))
 }
 
