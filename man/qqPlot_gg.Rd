@@ -11,12 +11,20 @@ qqPlot_gg(x, distribution = "norm", ..., line.estimate = NULL,
 \item{x}{A numeric vector of residuals from a generalized linear model.}
 
 \item{distribution}{The reference probability distribution for residuals.}
+
+\item{...}{Any additional parameters to be passed to distribution functions.}
+
+\item{line.estimate}{Should quantiles be estimated, if so which quantiles?}
+
+\item{conf}{The confidence level to be used with confidence intervals.}
+
+\item{labels}{The names to be used when identifying points on the Q-Q plot.}
 }
 \description{
 Produce standard quantile-quantile plots for modeling using ggplot2.
 }
 \examples{
-n <- 10; x1 <- rnorm(n); y1 <- rnorm(n)
+n <- 100; x1 <- rnorm(n); y1 <- rnorm(n);
 linmod <- lm(y1 ~ x1)
 x <- linmod$residuals
 qqPlot_gg(x)

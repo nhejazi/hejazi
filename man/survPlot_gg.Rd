@@ -13,9 +13,17 @@ survPlot_gg(s, CI = "def", plot.cens = TRUE, surv.col = "gg.def",
 
 \item{CI}{Type of confidence interval for the survival object.}
 
+\item{plot.cens}{Should the plot include the censored values?}
+
 \item{surv.col}{Color for observations with outcomes of "survived".}
 
 \item{cens.col}{Color for observations with outcomes of "censored".}
+
+\item{lty.est}{The number of survival curves to be generated from the model.}
+
+\item{lty.ci}{The number of lines to be generated for confidence intervals.}
+
+\item{cens.shape}{The shapes of points plotted, passed to \code{geom_point}}
 
 \item{back.white}{Boolean for desired background color in plots.}
 
@@ -29,9 +37,12 @@ survPlot_gg(s, CI = "def", plot.cens = TRUE, surv.col = "gg.def",
 Produce a survival plot of a Kaplan-Meier estimator using ggplot2.
 }
 \examples{
-hmohiv <- read.table("http://www.ats.ucla.edu/stat/r/examples/asa/hmohiv.csv", sep=",", header = TRUE)
-mini <- hmohiv[ID <= 5, ]
-s <- survfit(Surv(mini$time, mini$censor) ~ 1)
+time <- c(5,6,8,3,22)
+age <- c(46,35,30,30,36)
+drug <- c(0,1,1,1,0)
+censor <- c(1,0,1,1,1)
+survdat <- as.data.frame(cbind(time,age,drug,censor))
+s <- survfit(Surv(time, censor) ~ 1, conf.type = "none")
 survPlot_gg(s)
 }
 

@@ -1,6 +1,6 @@
 Package: nima
 Title: Nima Hejazi's R Code
-Version: 0.1-9
+Version: 0.2-0
 Authors@R: person("Nima", "Hejazi", email = "nhejazi@berkeley.edu",
 		  role = c("aut", "cre"))
 Description: Miscellaneous functions that make life a little bit easier.

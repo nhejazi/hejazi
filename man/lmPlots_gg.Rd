@@ -13,7 +13,7 @@ lmPlots_gg(model)
 Produce standard diagnostic plots for linear models using ggplot2.
 }
 \examples{
-n <- 10; x1 <- rnorm(n); y1 <- rnorm(n)
+n <- 100; x1 <- rnorm(n); y1 <- rnorm(n);
 linmod <- lm(y1 ~ x1)
 lmPlots_gg(linmod)
 }
