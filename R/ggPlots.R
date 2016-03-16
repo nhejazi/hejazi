@@ -157,7 +157,7 @@ utils::globalVariables(c("time", "cens", "surv", "low", "up", "group"))
 #'
 #' @export survPlot_gg
 #'
-i#' @examples
+#' @examples
 #' library(survival)
 #' time <- c(5,6,8,3,22)
 #' age <- c(46,35,30,30,36)
