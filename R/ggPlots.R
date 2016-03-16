@@ -1,6 +1,4 @@
-utils::globalVariables(c("aes", "geom_point","xlab", "ylab", "ggtitle", "theme",
-                       "geom_abline", "geom_text", "geom_ribbon","ord.x","z",
-                       "scale_size_continuous", "lower", "upper", "label"))
+utils::globalVariables(c("ord.x", "z", "lower", "upper", "label"))
 
 #' Quantile-Quantile Plots with ggplot2
 #'
@@ -13,6 +11,7 @@ utils::globalVariables(c("aes", "geom_point","xlab", "ylab", "ggtitle", "theme",
 #' @param labels The names to be used when identifying points on the Q-Q plot.
 #' @param line.estimate Should quantiles be estimated, if so which quantiles?
 #'
+#' @importFrom stats quantile ppoints na.omit qnorm
 #' @importFrom ggplot2 ggplot aes geom_point xlab ylab ggtitle theme
 #' @importFrom ggplot2 geom_abline geom_text geom_ribbon scale_size_continuous
 #'
@@ -131,12 +130,7 @@ lmPlots_gg <- function(model) {
 ########### NEXT FUNCTION ###########
 #####################################
 
-utils::globalVariables(c("aes", "geom_point", "geom_hline", "xlab", "ylab", 
-                         "ggtitle", "stat_smooth", "geom_abline", "geom_bar", 
-                         "geom_step", "theme", "scale_size_continuous", 
-                         "scale_colour_discrete", "scale_linetype_manual",
-                         "scale_colour_manual", "cens", "surv", "low", "up", 
-                         "theme_bw", "group"))
+utils::globalVariables(c("time", "cens", "surv", "low", "up", "group"))
 
 #' Kaplan-Meier Plot with ggplot2
 #'
@@ -163,7 +157,7 @@ utils::globalVariables(c("aes", "geom_point", "geom_hline", "xlab", "ylab",
 #'
 #' @export survPlot_gg
 #'
-#' @examples
+i#' @examples
 #' library(survival)
 #' time <- c(5,6,8,3,22)
 #' age <- c(46,35,30,30,36)
