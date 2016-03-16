@@ -25,7 +25,9 @@ Nima's ggplot2 theme: black border and no ticks
 \examples{
 library(ggplot2)
 mtcars$cyl <- factor(mtcars$cyl)
-ggplot(mtcars, aes(y=mpg, x = disp, color = cyl)) + geom_point() + theme_nima()
+p <- ggplot(mtcars, aes(y=mpg, x = disp, color = cyl)) 
+p <- p + geom_point() + theme_nima()
+p
 
 }
 \seealso{

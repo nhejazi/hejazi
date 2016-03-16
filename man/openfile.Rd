@@ -13,9 +13,7 @@ openfile(file)
 Open a file using \code{\link[base]{system}} and \code{open}.
 }
 \details{
-I'd thought that to open a file you'd use \code{open} in MacOS and
-\code{start} in Windows, but \code{system("start myfile.pdf")} doesn't work
-work in Windows, but rather \code{system("open myfile.pdf")} does.
+Open files from R by using the default operating system program.
 }
 \examples{
 \dontrun{openfile("myplot.pdf")}

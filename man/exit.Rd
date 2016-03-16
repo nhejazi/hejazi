@@ -7,7 +7,7 @@
 exit()
 }
 \description{
-Exit R without saving workspace using UNIX syntax.
+Exit R without saving workspace, using the ubiquitous UNIX syntax.
 }
 \details{
 This function is merely a call to \code{q("no")}.

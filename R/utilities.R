@@ -1,6 +1,6 @@
 #' Exit R Without Saving
 #'
-#' Exit R without saving workspace using UNIX syntax.
+#' Exit R without saving workspace, using the ubiquitous UNIX syntax.
 #'
 #' @details This function is merely a call to \code{q("no")}.
 #'
@@ -40,9 +40,7 @@ hweb <- function(...) {
 #'
 #' @param file File name (as character string).
 #'
-#' @details I'd thought that to open a file you'd use \code{open} in MacOS and
-#' \code{start} in Windows, but \code{system("start myfile.pdf")} doesn't work
-#' work in Windows, but rather \code{system("open myfile.pdf")} does.
+#' @details Open files from R by using the default operating system program.
 #'
 #' @export
 #'
