@@ -1,5 +1,7 @@
 # R/nima
 
+[![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=master)](https://travis-ci.org/nhejazi/nima)
+
 __perpetually under development.__
 
 This is the 
