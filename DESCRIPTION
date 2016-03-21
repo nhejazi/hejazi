@@ -3,7 +3,7 @@ Title: Nima Hejazi's R Code
 Version: 0.3.0
 Authors@R: person("Nima", "Hejazi", email = "nhejazi@berkeley.edu",
 		  role = c("aut", "cre"))
-Description: Miscellaneous functions that make life a little bit easier.
+Description: Miscellaneous functions that make life just a little bit easier.
 Depends:
     R (>= 3.2.3)
 Imports:
@@ -13,8 +13,8 @@ Imports:
 	survival,
 	gridExtra,
 	assertthat,
-  ggplot2,
-  grid
+  	ggplot2,
+  	grid
 Suggests:
 	devtools,
 	testthat,

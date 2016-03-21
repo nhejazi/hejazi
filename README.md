@@ -11,7 +11,7 @@ This is the
 R/nima is an [R](http://www.r-project.org) package that houses miscellaneous 
 functions that are useful to me.
 
-This package is public for my own convenience -- no guarantees -- though proper
+This package is made public for my own convenience, with no guarantees; proper
 documentation is provided.
 
 ---
