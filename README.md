@@ -1,6 +1,6 @@
 # R/nima
 
-__under active development.__
+__perpetually under development.__
 
 This is the 
 [personal R package](http://hilaryparker.com/2013/04/03/personal-r-packages/) of
@@ -11,8 +11,8 @@ This is the
 R/nima is an [R](http://www.r-project.org) package that houses miscellaneous 
 functions that are useful to me.
 
-This package has been made public primarily for my own convenience, though care
-has been taken to provide proper documentation.
+This package is public for my own convenience -- no guarantees -- though proper
+documentation is provided.
 
 ---
 
