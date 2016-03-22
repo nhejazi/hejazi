@@ -12,7 +12,7 @@ This is the
 
 ---
 
-[R/nima](https://cran.r-project.org/web/packages/nima/index.html) is an 
+[R/nima](http://cran.r-project.org/package=nima) is an 
 [R](http://www.r-project.org) package that houses miscellaneous functions that 
 are useful to me.
 
