@@ -21,7 +21,7 @@ exit <- function() q("no")
 #' @export
 #'
 #' @examples
-#' hweb(read.cross)
+#' hweb(read.table)
 #'
 #' @seealso
 #' \code{\link[utils]{help}}, \code{\link[utils]{help.start}}
