@@ -2,8 +2,6 @@
 
 [![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=master)](https://travis-ci.org/nhejazi/nima)
 
-__perpetually under development.__
-
 This is the 
 [personal R package](http://hilaryparker.com/2013/04/03/personal-r-packages/) of
 [Nima Hejazi](http://nimahejazi.org)
@@ -15,6 +13,8 @@ functions that are useful to me.
 
 This package is made public for my own convenience, with no guarantees; proper
 documentation is provided.
+
+This package should be considered to be __perpetually under development__.
 
 ---
 
