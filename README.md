@@ -14,7 +14,7 @@ functions that are useful to me.
 This package is made public for my own convenience, with no guarantees; proper
 documentation is provided.
 
-This package should be considered to be __perpetually under development__.
+This package is considered to be __*perpetually* under development__.
 
 ---
 
