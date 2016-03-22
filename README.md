@@ -2,10 +2,13 @@
 
 [![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=master)
 ](https://travis-ci.org/nhejazi/nima)
+[![Coverage 
+Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=master)
+](https://coveralls.io/github/nhejazi/nima?branch=master)
 
 This is the 
 [personal R package](http://hilaryparker.com/2013/04/03/personal-r-packages/) of
-[Nima Hejazi](http://nimahejazi.org)
+[Nima Hejazi](http://nimahejazi.org).
 
 ---
 
@@ -21,12 +24,12 @@ This package is considered to be __*perpetually* under development__.
 
 ## Installation
 
-- To install the most recent stable release:
-	- from CRAN, use `install.packages("nima")` in R.
-	- from GitHub, use `devtools::install_github("nhejazi/nima")` in R.
+- To install the most recent _stable release_:
+	- from CRAN, use `install.packages("nima")`
+	- from GitHub, use `devtools::install_github("nhejazi/nima")`
 
-- To install the development version from GitHub, in R, use
-  `devtools::install_github("nhejazi/nima", ref = "devel")`.
+- To install the _development version_, use
+  `devtools::install_github("nhejazi/nima", ref = "devel")`
 
 ---
 
