@@ -1,6 +1,6 @@
 # R/nima
 
-[![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=devel)
+[![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=master)
 ](https://travis-ci.org/nhejazi/nima)
 [![Coverage 
 Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=master)
