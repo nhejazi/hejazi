@@ -3,8 +3,8 @@
 [![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=master)
 ](https://travis-ci.org/nhejazi/nima)
 [![Coverage 
-Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=master)
-](https://coveralls.io/github/nhejazi/nima?branch=master)
+Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=devel)
+](https://coveralls.io/github/nhejazi/nima?branch=devel)
 [![CRAN](http://r-pkg.org/badges/version/nima)](http://cran.r-project.org/web/checks/check_results_nima.html)
 
 This is the 
