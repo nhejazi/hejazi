@@ -5,7 +5,7 @@
 [![Coverage 
 Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=master)
 ](https://coveralls.io/github/nhejazi/nima?branch=master)
-![CRAN](http://cranlogs-dev.r-pkg.org/badges/nima)
+![CRAN](http://r-pkg.org/badges/version/nima)
 
 This is the 
 [personal R package](http://hilaryparker.com/2013/04/03/personal-r-packages/) of
