@@ -7,9 +7,7 @@ Description: Miscellaneous R functions developed over the course of statistical
 	     research. These include utilities that supplement the existing
 	     idiosyncrasies of R; extend plotting functionality and aesthetics; 
 	     provide alternative presentations of matrix decompositions; extend 
-	     types of random variables supported for simulation; extend access
-	     to command line tools and system information, making work on remote
-	     systems easier.
+	     access to command line tools and system information.
 Depends:
     R (>= 3.2.3)
 Imports:

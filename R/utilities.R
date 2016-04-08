@@ -25,9 +25,6 @@ exit <- function() q("no")
 #'
 #' @seealso
 #' \code{\link[utils]{help}}, \code{\link[utils]{help.start}}
-#'
-#' @keywords
-#' documentation
 
 hweb <- function(...) {
     utils::help(..., help_type = "html")

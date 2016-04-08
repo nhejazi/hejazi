@@ -20,8 +20,6 @@
 #'
 #' @seealso
 #' \code{\link[base]{qr}}
-#'
-#' @keywords linear algebra
 
 qrD <- function(x, tol = 1e-7) {
 
