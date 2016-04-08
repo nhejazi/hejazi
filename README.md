@@ -9,7 +9,7 @@ Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=devel)
 
 This is the 
 [personal R package](http://hilaryparker.com/2013/04/03/personal-r-packages/) of
-[Nima Hejazi](http://nimahejazi.org).
+[Nima Hejazi](http://nimahejazi.org/pages/about.html).
 
 ---
 
@@ -19,7 +19,7 @@ are useful to me.
 
 This package is made public for my own convenience, with no guarantees.
 
-This package is considered to be _perpetually_ __under development__.
+This package should be considered to be __perpetually under development__.
 
 ---
 
