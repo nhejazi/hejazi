@@ -1,12 +1,13 @@
 #' Nima's ggplot2 theme
 #'
-#' Nima's ggplot2 theme: black border and no ticks
+#' Nima's ggplot2 theme: white background, colors optimized
 #'
 #' @param base_size Base font size
 #' @param base_family Base font family
 #' @param ... Passed to \code{\link[ggplot2]{theme}}
 #'
 #' @importFrom ggplot2 ggplot
+#' @importFrom grid unit
 #'
 #' @export
 #'
@@ -16,22 +17,59 @@
 #' library(ggplot2)
 #' mtcars$cyl <- factor(mtcars$cyl)
 #' p <- ggplot(mtcars, aes(y=mpg, x = disp, color = cyl)) 
-#' p <- p + geom_point() + theme_nima()
+#' p <- p + geom_point() + scale_fill_nima() + scale_color_nima() + theme_nima()
 #' p
 #'
 #' @seealso
 #' \code{\link[ggplot2]{theme}}
 
 
-theme_nima <- function(base_size = 12, base_family = "", ...) {
-    ggplot2::"%+replace%"(
-      ggplot2::theme_grey(base_size = base_size, base_family = base_family),
-      ggplot2::theme(axis.ticks.length = grid::unit(0, "cm"),
-                     panel.border = ggplot2::element_rect(fill = NA,
-                                                          color = "black"),
-                     strip.background=ggplot2::element_rect(fill="gray80",
-                                                            color="black"), ...)
-      )
+theme_nima <- function(base_size = 14, base_family = "Arial") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size = base_size, base_family = base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold", size = rel(1)),
+               axis.title.y = element_text(angle = 90, vjust = 2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour = "black"),
+               axis.ticks = element_line(),
+               axis.ticks.length = unit(0, "cm"),
+               panel.grid.major = element_line(colour = "#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "bottom",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.2, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title = element_text(face = "italic"),
+               plot.margin = unit(c(10, 5, 5, 5), "mm"),
+               strip.background = element_rect(colour = "#f0f0f0", 
+                                               fill = "#f0f0f0"),
+               strip.text = element_text(face = "bold")
+          ))     
+}
+
+scale_fill_nima <- function(...){
+      library(scales)
+      discrete_scale("fill","nima",
+                     manual_pal(values = c("#386cb0","#fdb462","#7fc97f",
+                                           "#ef3b2c","#662506","#a6cee3",
+                                           "#fb9a99","#984ea3","#ffff33")), ...)
+}
+
+scale_color_nima <- function(...){
+      library(scales)
+      discrete_scale("colour","nima",
+                     manual_pal(values = c("#386cb0","#fdb462","#7fc97f",
+                                           "#ef3b2c","#662506","#a6cee3",
+                                           "#fb9a99","#984ea3","#ffff33")), ...)
 }
 
 #' @rdname theme_nima
