@@ -6,8 +6,10 @@
 #' @param base_family Base font family
 #' @param ... Passed to \code{\link[ggplot2]{theme}}
 #'
-#' @importFrom ggplot2 ggplot
+#' @importFrom ggplot2 ggplot rel element_text element_rect element_line
+#' @importFrom ggplot2 element_blank
 #' @importFrom grid unit
+#' @importFrom ggthemes theme_foundation
 #'
 #' @export
 #'
@@ -15,8 +17,7 @@
 #'
 #' @examples
 #' library(ggplot2)
-#' mtcars$cyl <- factor(mtcars$cyl)
-#' p <- ggplot(mtcars, aes(y=mpg, x = disp, color = cyl)) 
+#' p <- ggplot(mtcars, aes(y = mpg, x = disp, color = factor(cyl))) 
 #' p <- p + geom_point() + scale_fill_nima() + scale_color_nima() + theme_nima()
 #' p
 #'
@@ -24,9 +25,7 @@
 #' \code{\link[ggplot2]{theme}}
 
 
-theme_nima <- function(base_size = 14, base_family = "Arial") {
-      library(grid)
-      library(ggthemes)
+theme_nima <- function(base_size = 14, base_family = "Helvetica") {
       (theme_foundation(base_size = base_size, base_family = base_family)
        + theme(plot.title = element_text(face = "bold",
                                          size = rel(1.2), hjust = 0.5),
@@ -56,22 +55,46 @@ theme_nima <- function(base_size = 14, base_family = "Arial") {
           ))     
 }
 
+#' @rdname theme_nima
+#' @export
+nima_theme <- theme_nima
+
+
+#' Nima's ggplot2 theme - supplement: scale_fill
+#'
+#' Nima's ggplot2 theme scale_fill supplement: colors optimized via ColorBrewer
+#'
+#' @param ... Passed to \code{\link[ggplot2]{ggplot}}
+#'
+#' @importFrom ggplot2 discrete_scale
+#' @importFrom scales manual_pal
+#'
+#' @export
+#'
+
 scale_fill_nima <- function(...){
-      library(scales)
       discrete_scale("fill","nima",
                      manual_pal(values = c("#386cb0","#fdb462","#7fc97f",
                                            "#ef3b2c","#662506","#a6cee3",
                                            "#fb9a99","#984ea3","#ffff33")), ...)
 }
 
+
+#' Nima's ggplot2 theme - supplement: scale_color
+#'
+#' Nima's ggplot2 theme scale_color supplement: colors optimized via ColorBrewer
+#'
+#' @param ... Passed to \code{\link[ggplot2]{ggplot}}
+#'
+#' @importFrom ggplot2 discrete_scale
+#' @importFrom scales manual_pal
+#'
+#' @export
+#'
+
 scale_color_nima <- function(...){
-      library(scales)
       discrete_scale("colour","nima",
                      manual_pal(values = c("#386cb0","#fdb462","#7fc97f",
                                            "#ef3b2c","#662506","#a6cee3",
                                            "#fb9a99","#984ea3","#ffff33")), ...)
 }
-
-#' @rdname theme_nima
-#' @export
-nima_theme <- theme_nima
