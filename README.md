@@ -6,6 +6,7 @@
 Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=devel)
 ](https://coveralls.io/github/nhejazi/nima?branch=devel)
 [![CRAN](http://r-pkg.org/badges/version/nima)](http://cran.r-project.org/web/checks/check_results_nima.html)
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 This is the 
 [personal R package](http://hilaryparker.com/2013/04/03/personal-r-packages/) of
