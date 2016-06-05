@@ -145,13 +145,13 @@ utils::globalVariables(c("time", "cens", "surv", "low", "up", "group"))
 #' @param ylab A label for the y-axis, defaults to "Survival".
 #' @param main A main label for the survival plot, no default.
 #' @param pltcens Should the plot include the censored values?
-#' @param lty The number of survival curves to be generated from the model. 
-#' @param ltci The number of lines to be generated for confidence intervals. 
+#' @param lty The number of survival curves to be generated from the model.
+#' @param ltci The number of lines to be generated for confidence intervals.
 #' @param shape The shapes of points plotted, passed to \code{geom_point}
 #'
 #' @importFrom ggplot2 ggplot aes geom_point geom_hline xlab ylab ggtitle
-#' @importFrom ggplot2 stat_smooth geom_abline geom_bar geom_step theme 
-#' @importFrom ggplot2 scale_size_continuous scale_colour_discrete theme_bw 
+#' @importFrom ggplot2 stat_smooth geom_abline geom_bar geom_step theme
+#' @importFrom ggplot2 scale_size_continuous scale_colour_discrete theme_bw
 #' @importFrom ggplot2 scale_linetype_manual scale_colour_manual
 #' @importFrom survival survfit Surv
 #'
@@ -168,7 +168,7 @@ utils::globalVariables(c("time", "cens", "surv", "low", "up", "group"))
 #' survPlot_gg(s)
 
 survPlot_gg <- function(s, CI = "def", pltcens = TRUE, survcl = "gg.def",
-                        censcl = "red", lty = 1, ltci = 2, shape = 3, 
+                        censcl = "red", lty = 1, ltci = 2, shape = 3,
                         bw = FALSE, xlab = "Time", ylab = "Survival",
                         main = "") {
 
@@ -177,7 +177,7 @@ survPlot_gg <- function(s, CI = "def", pltcens = TRUE, survcl = "gg.def",
   stopifnot(length(lty) == 1 | length(lty) == strata)
 
   ggsurv.s <- function(s, CI = "def", pltcens = TRUE, survcl = "gg.def",
-                       censcl = "red", lty = 1, ltci = 2, shape = 3, bw = FALSE, 
+                       censcl = "red", lty = 1, ltci = 2, shape = 3, bw = FALSE,
                        xlab = "Time", ylab = "Survival", main = ""){
 
     dat <- data.frame(time = c(0, s$time), surv = c(1, s$surv),
@@ -209,7 +209,7 @@ survPlot_gg <- function(s, CI = "def", pltcens = TRUE, survcl = "gg.def",
   }
 
   ggsurv.m <- function(s, CI = "def", pltcens = TRUE, survcl = "gg.def",
-                       censcl = "red", lty = 1, ltci = 2, shape = 3, bw = FALSE, 
+                       censcl = "red", lty = 1, ltci = 2, shape = 3, bw = FALSE,
                        xlab = "Time", ylab = "Survival Prob.", main = "") {
     n <- s$strata
     groups <- factor(unlist(strsplit(names(s$strata), "="))[seq(2, 2 * strata,
