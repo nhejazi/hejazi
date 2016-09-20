@@ -1,22 +1,16 @@
 ## Test environments
-* local OS X install, R 3.2.4
+* local OS X install, R 3.3.1
 * win-builder (devel and release)
 
 ## R CMD check results
 * There were 0 ERRORs.
 
-* There was 1 WARNING:
+* There were 0 WARNINGs.
 
-  * LaTeX errors when creating PDF version.
-
-    This typically indicates Rd problems, but no errors appear in Rdlatex.log
-
-* There was 1 NOTE:
-
-  * New submission
+* There were 0 NOTEs.
 
 ## Downstream dependencies
 * Nothing to report.
 
 ## Additional Notes
-* Re-submission after adding details to DESCRIPTION. No other changes made.
+* Updated submission of package, up from version 0.3.0 to 0.4.0

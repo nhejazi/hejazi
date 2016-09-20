@@ -1,10 +1,10 @@
 # R/nima
 
-[![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=master)
+[![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=develop)
 ](https://travis-ci.org/nhejazi/nima)
 [![Coverage
-Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=devel)
-](https://coveralls.io/github/nhejazi/nima?branch=devel)
+Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=develop)
+](https://coveralls.io/github/nhejazi/nima?branch=develop)
 [![CRAN](http://r-pkg.org/badges/version/nima)](http://cran.r-project.org/web/checks/check_results_nima.html)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
@@ -23,7 +23,7 @@ are useful to me.
 
 This package is made public for my own convenience, with no guarantees.
 
-This package is considered to be __perpetually under development__.
+This package should be considered as being __perpetually under development__.
 
 ---
 
