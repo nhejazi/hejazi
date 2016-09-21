@@ -5,9 +5,9 @@
 \alias{theme_nima}
 \title{Nima's ggplot2 theme}
 \usage{
-theme_nima(base_size = 12, base_family = "", ...)
+theme_nima(base_size = 14, base_family = "Helvetica")
 
-nima_theme(base_size = 12, base_family = "", ...)
+nima_theme(base_size = 14, base_family = "Helvetica")
 }
 \arguments{
 \item{base_size}{Base font size}
@@ -20,13 +20,12 @@ nima_theme(base_size = 12, base_family = "", ...)
 An object as returned by \code{\link[ggplot2]{theme}}
 }
 \description{
-Nima's ggplot2 theme: black border and no ticks
+Nima's ggplot2 theme: white background, colors optimized
 }
 \examples{
 library(ggplot2)
-mtcars$cyl <- factor(mtcars$cyl)
-p <- ggplot(mtcars, aes(y=mpg, x = disp, color = cyl)) 
-p <- p + geom_point() + theme_nima()
+p <- ggplot(mtcars, aes(y = mpg, x = disp, color = factor(cyl))) 
+p <- p + geom_point() + scale_fill_nima() + scale_color_nima() + theme_nima()
 p
 
 }

@@ -1,30 +1,30 @@
 Package: nima
-Title: Nima Hejazi's Miscellaneous R Code
-Version: 0.3.0
-Authors@R: person("Nima", "Hejazi", email = "nhejazi@berkeley.edu",
-		  role = c("aut", "cre"))
+Title: Nima Hejazi's Miscellaneous R Tools
+Version: 0.4.0
+Authors@R: as.person(c(
+  "Nima Hejazi <nhejazi@berkeley.edu> [aut, cre]"))
 Description: Miscellaneous R functions developed over the course of statistical
-	     research. These include utilities that supplement the existing
-	     idiosyncrasies of R; extend plotting functionality and aesthetics; 
-	     provide alternative presentations of matrix decompositions; extend 
-	     types of random variables supported for simulation; extend access
-	     to command line tools and system information, making work on remote
-	     systems easier.
+  research. These include utilities that supplement the existing idiosyncrasies
+  of R; extend existing (and provide customized) plotting functionality and
+  aesthetics; provide alternative presentations of matrix decompositions; extend
+  access to command line tools and system information.
 Depends:
-    R (>= 3.2.3)
+  R (>= 3.2.3)
 Imports:
-    plyr,
-    utils,
-    stats,
-    survival,
-    gridExtra,
-    assertthat,
-    ggplot2,
-    grid
+  plyr,
+  utils,
+  stats,
+  survival,
+  gridExtra,
+  assertthat,
+  ggthemes,
+  ggplot2,
+  scales,
+  grid
 Suggests:
-    devtools,
-    roxygen2,
-    testthat
+  devtools,
+  roxygen2,
+  testthat
 License: MIT + file LICENSE
 URL: https://github.com/nhejazi/nima
 LazyData: true

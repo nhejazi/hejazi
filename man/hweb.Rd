@@ -22,5 +22,4 @@ hweb(read.table)
 \seealso{
 \code{\link[utils]{help}}, \code{\link[utils]{help.start}}
 }
-\keyword{documentation}
 
