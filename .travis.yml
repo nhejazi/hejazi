@@ -1,5 +1,9 @@
 language: r
-
+r:
+  - oldrel
+  - release
+  - devel
+  
 warnings_are_errors: true
 
 sudo: required
@@ -9,3 +13,8 @@ r_github_packages:
 
 after_success:
   - Rscript -e 'covr::coveralls()'
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change

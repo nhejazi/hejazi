@@ -1,5 +1,5 @@
 Package: nima
-Title: Nima Hejazi's Miscellaneous R Tools
+Title: Nima Hejazi's R Toolbox
 Version: 0.4.0
 Authors@R: as.person(c(
   "Nima Hejazi <nhejazi@berkeley.edu> [aut, cre]"))
