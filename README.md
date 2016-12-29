@@ -1,10 +1,10 @@
-# R/nima
+# R/`nima`
 
 [![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=develop)
 ](https://travis-ci.org/nhejazi/nima)
 [![Coverage
-Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=develop)
-](https://coveralls.io/github/nhejazi/nima?branch=develop)
+Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=master)
+](https://coveralls.io/github/nhejazi/nima?branch=master)
 [![CRAN](http://r-pkg.org/badges/version/nima)](http://cran.r-project.org/web/checks/check_results_nima.html)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
@@ -29,24 +29,26 @@ This package should be considered as being __perpetually under development__.
 
 ## Installation
 
-- It is recommended that you install the _development version_
-  - from GitHub: `devtools::install_github("nhejazi/nima", ref = "develop")`
+- Install the _development version_ from GitHub:
+    `devtools::install_github("nhejazi/nima", ref = "develop")`
 
-- To install the most recent _stable release_,
-  - from CRAN, use `install.packages("nima")`
-  - from GitHub, use `devtools::install_github("nhejazi/nima")`
+- Install the most recent _stable release_ from GitHub:
+    `devtools::install_github("nhejazi/nima")`
+
+- Install a fairly recent _stable release_ from CRAN:
+    `install.packages("nima")`
 
 ---
 
 ## License
 
-&copy; 2016 [Nima Hejazi](http://nimahejazi.org)
+&copy; 2016-2017 [Nima S. Hejazi](http://nimahejazi.org)
 
 This repository is licensed under the MIT license. See below for details:
 ```
 The MIT License (MIT)
 
-Copyright (c) 2016 Nima Hejazi
+Copyright (c) 2016-2017 Nima S. Hejazi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
