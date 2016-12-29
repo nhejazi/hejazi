@@ -44,7 +44,8 @@ This package should be considered as being __perpetually under development__.
 
 &copy; 2016-2017 [Nima S. Hejazi](http://nimahejazi.org)
 
-This repository is licensed under the MIT license. See below for details:
+The contents of this repository are distributed under the MIT license. See
+below for details:
 ```
 The MIT License (MIT)
 
