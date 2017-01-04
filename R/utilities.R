@@ -21,7 +21,7 @@ exit <- function() q("no")
 #' @export
 #'
 #' @examples
-#' hweb(read.table)
+#' \dontrun{hweb(read.table)}
 #'
 #' @seealso
 #' \code{\link[utils]{help}}, \code{\link[utils]{help.start}}
