@@ -1,29 +1,23 @@
 # R/`nima`
 
-[![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=develop)
-](https://travis-ci.org/nhejazi/nima)
-[![Coverage
-Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=master)
-](https://coveralls.io/github/nhejazi/nima?branch=master)
-[![CRAN](http://r-pkg.org/badges/version/nima)](http://cran.r-project.org/web/checks/check_results_nima.html)
+[![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=master)](https://travis-ci.org/nhejazi/nima)
+[![AppVeyor Build  Status](https://ci.appveyor.com/api/projects/status/github/nhejazi/nima?branch=master&svg=true)](https://ci.appveyor.com/project/nhejazi/nima)
+[![Coverage Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=master)](https://coveralls.io/github/nhejazi/nima?branch=master)
+[![CRAN](http://www.r-pkg.org/badges/version/nima)](http://www.r-pkg.org/pkg/nima)
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-> A collection of miscellaneous tools for programming in
-> [R](https://www.r-project.org/).
-
-This is the [personal
-R package](http://hilaryparker.com/2013/04/03/personal-r-packages/) of
-[Nima Hejazi](http://nimahejazi.org/pages/about.html).
+> A collection of miscellaneous tools comprising the [personal R
+> package](http://hilaryparker.com/2013/04/03/personal-r-packages/) of
+> [Nima Hejazi](http://nimahejazi.org/pages/about.html)
 
 ---
 
-[R/nima](http://cran.r-project.org/package=nima) is an
-[R](http://www.r-project.org) package that houses miscellaneous functions that
-are useful to me.
+[R/nima](http://nimahejazi.org/nima) is an [R](http://www.r-project.org)
+package comprised of miscellaneous tools that are useful to me.
 
-This package is made public for my own convenience, with no guarantees.
-
-This package should be considered as being __perpetually under development__.
+This package is made public for my own convenience, with no guarantees
+whatsoever.
 
 ---
 

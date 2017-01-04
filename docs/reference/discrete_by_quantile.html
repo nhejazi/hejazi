@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>View HTML Version of Help Files — hweb • nima</title>
+<title>Discretize a vector — discrete_by_quantile • nima</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -74,41 +74,39 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>View HTML Version of Help Files</h1>
+    <h1>Discretize a vector</h1>
     </div>
 
     
-    <p>View the HTML version of a help file while running R from the terminal.</p>
+    <p>Discretizes a non-factor input vector and returns the result as numeric.</p>
     
 
-    <pre><span class='fu'>hweb</span>(<span class='no'>...</span>)</pre>
+    <pre><span class='fu'>discrete_by_quantile</span>(<span class='no'>x</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <dl class="dl-horizontal">
-      <dt>...</dt>
-      <dd>Help topics.</dd>
+      <dt>x</dt>
+      <dd>A vector containing arbitrary data.</dd>
     </dl>
     
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>Calls function <code><a href='http://www.rdocumentation.org/packages/utils/topics/help'>help</a></code> using argument <code>htmlhelp=TRUE</code>.</p>
-    
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <p><code><a href='http://www.rdocumentation.org/packages/utils/topics/help'>help</a></code>, <code><a href='http://www.rdocumentation.org/packages/utils/topics/help.start'>help.start</a></code></p>
+    <p>A numeric vector with the data re-coded to based on the quantiles.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'>## Not run: hweb(read.table)</span></div></pre>
+    <pre class="examples"><div class='input'><span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'>rnorm</span>(<span class='fl'>1000</span>)
+<span class='fu'>discrete_by_quantile</span>(<span class='no'>x</span>)</div><div class='output co'>#&gt;   [1] 3 3 2 4 1 1 4 2 2 2 4 2 4 3 1 1 1 2 4 2 4 4 3 2 1 3 1 2 2 1 1 3 2 2 3 1 1
+#&gt;  [38] 1 1 2 1 4 4 3 4 1 2 2 4 3 1 1 2 2 2 1 1 2 3 3 4 2 4 2 2 1 1 3 3 2 1 4 1 2
+#&gt;  [75] 1 1 3 3 1 3 2 1 4 4 2 1 1 1 4 1 1 4 4 2 4 2 4 3 1 1
+#&gt;  [ reached getOption(&quot;max.print&quot;) -- omitted 900 entries ]</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#details">Details</a></li>
-
-      <li><a href="#see-also">See also</a></li>
+      <li><a href="#value">Value</a></li>
       
       <li><a href="#examples">Examples</a></li>
     </ul>
