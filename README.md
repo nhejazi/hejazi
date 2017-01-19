@@ -1,8 +1,8 @@
 # R/`nima`
 
-[![Travis-CI Build Status](https://travis-ci.org/nhejazi/nima.svg?branch=master)](https://travis-ci.org/nhejazi/nima)
-[![AppVeyor Build  Status](https://ci.appveyor.com/api/projects/status/github/nhejazi/nima?branch=master&svg=true)](https://ci.appveyor.com/project/nhejazi/nima)
-[![Coverage Status](https://coveralls.io/repos/github/nhejazi/nima/badge.svg?branch=master)](https://coveralls.io/github/nhejazi/nima?branch=master)
+[![Travis-CI Build](https://travis-ci.org/nhejazi/nima.svg?branch=master)](https://travis-ci.org/nhejazi/nima)
+[![AppVeyor Build](https://ci.appveyor.com/api/projects/status/github/nhejazi/nima?branch=master&svg=true)](https://ci.appveyor.com/project/nhejazi/nima)
+[![Coverage Status](https://img.shields.io/codecov/c/github/nhejazi/nima/master.svg)](https://codecov.io/github/nhejazi/nima?branch=master)
 [![CRAN](http://www.r-pkg.org/badges/version/nima)](http://www.r-pkg.org/pkg/nima)
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
