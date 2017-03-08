@@ -19,4 +19,3 @@ Convert a factor with numeric levels to a non-factor (numeric).
 x <- factor(c(3, 4, 9, 4, 9), levels = c(3,4,9))
 factornum(x)
 }
-

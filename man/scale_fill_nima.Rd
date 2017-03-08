@@ -12,4 +12,3 @@ scale_fill_nima(...)
 \description{
 Nima's ggplot2 theme scale_fill supplement: colors optimized via ColorBrewer
 }
-

@@ -29,4 +29,3 @@ linmod <- lm(y1 ~ x1)
 x <- linmod$residuals
 qqPlot_gg(x)
 }
-

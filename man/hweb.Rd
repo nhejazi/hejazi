@@ -22,4 +22,3 @@ Calls function \code{\link[utils]{help}} using argument \code{htmlhelp=TRUE}.
 \seealso{
 \code{\link[utils]{help}}, \code{\link[utils]{help.start}}
 }
-

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Linear Model Diagnostic Plots with ggplot2 — lmPlots_gg • nima</title>
+<title>Conveniently Load Bioconductor — bioc • nima</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -74,34 +74,27 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Linear Model Diagnostic Plots with ggplot2</h1>
+    <h1>Conveniently Load Bioconductor</h1>
     </div>
 
     
-    <p>Produce standard diagnostic plots for linear models using ggplot2.</p>
+    <p>Load Bioconductor&#39;s &quot;biocLite&quot; function by wrapping &quot;source&quot;.</p>
     
 
-    <pre><span class='fu'>lmPlots_gg</span>(<span class='no'>model</span>)</pre>
-    
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>model</dt>
-      <dd>A linear model object produced by <code>lm()</code>.</dd>
-    </dl>
+    <pre><span class='fu'>bioc</span>()</pre>
+        
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>Just a call to <code>source(&quot;https://bioconductor.org/biocLite.R&quot;)</code></p>
     
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>n</span> <span class='kw'>&lt;-</span> <span class='fl'>100</span>; <span class='no'>x1</span> <span class='kw'>&lt;-</span> <span class='fu'>rnorm</span>(<span class='no'>n</span>); <span class='no'>y1</span> <span class='kw'>&lt;-</span> <span class='fu'>rnorm</span>(<span class='no'>n</span>);
-<span class='no'>linmod</span> <span class='kw'>&lt;-</span> <span class='fu'>lm</span>(<span class='no'>y1</span> ~ <span class='no'>x1</span>)
-<span class='fu'>lmPlots_gg</span>(<span class='no'>linmod</span>)</div><div class='output co'>#&gt; <span class='error'>Error in grid.Call.graphics(L_upviewport, as.integer(n)): cannot pop the top-level viewport (&#39;grid&#39; and &#39;graphics&#39; output mixed?)</span></div><img src='lmPlots_gg-3.png' alt='' width='540' height='400' /></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-            
-      <li><a href="#examples">Examples</a></li>
-    </ul>
+      
+      <li><a href="#details">Details</a></li>
+          </ul>
 
   </div>
 </div>

@@ -23,4 +23,3 @@ data[sample(nrow(data), 3), 1] <- NA
 data[sample(nrow(data), 4), 2] <- NA
 data <- miss_ind(data)
 }
-

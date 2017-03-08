@@ -25,4 +25,3 @@ Calls \code{\link[utils]{object.size}} to get the sizes of a list of objects.
 print(output <- objsizes())
 \dontrun{sum(output)}
 }
-
