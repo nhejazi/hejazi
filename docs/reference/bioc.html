@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nima&#39;s ggplot2 theme — theme_nima • nima</title>
+<title>Conveniently Load Bioconductor — bioc • nima</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -74,54 +74,27 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Nima&#39;s ggplot2 theme</h1>
+    <h1>Conveniently Load Bioconductor</h1>
     </div>
 
     
-    <p>Nima&#39;s ggplot2 theme: white background, colors optimized</p>
+    <p>Load Bioconductor&#39;s &quot;biocLite&quot; function by wrapping &quot;source&quot;.</p>
     
 
-    <pre><span class='fu'>theme_nima</span>(<span class='kw'>base_size</span> <span class='kw'>=</span> <span class='fl'>14</span>, <span class='kw'>base_family</span> <span class='kw'>=</span> <span class='st'>"Helvetica"</span>)
+    <pre><span class='fu'>bioc</span>()</pre>
+        
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-<span class='fu'>nima_theme</span>(<span class='kw'>base_size</span> <span class='kw'>=</span> <span class='fl'>14</span>, <span class='kw'>base_family</span> <span class='kw'>=</span> <span class='st'>"Helvetica"</span>)</pre>
-    
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>base_size</dt>
-      <dd>Base font size</dd>
-      <dt>base_family</dt>
-      <dd>Base font family</dd>
-      <dt>...</dt>
-      <dd>Passed to <code><a href='http://www.rdocumentation.org/packages/ggplot2/topics/theme'>theme</a></code></dd>
-    </dl>
-    
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>An object as returned by <code><a href='http://www.rdocumentation.org/packages/ggplot2/topics/theme'>theme</a></code></p>
-    
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <p><code><a href='http://www.rdocumentation.org/packages/ggplot2/topics/theme'>theme</a></code></p>
+    <p>Wrapper to <code>source(&quot;https://bioconductor.org/biocLite.R&quot;)</code></p>
     
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>ggplot2</span>)
-<span class='no'>p</span> <span class='kw'>&lt;-</span> <span class='fu'>ggplot</span>(<span class='no'>mtcars</span>, <span class='fu'>aes</span>(<span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>mpg</span>, <span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>disp</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='fu'>factor</span>(<span class='no'>cyl</span>)))
-<span class='no'>p</span> <span class='kw'>&lt;-</span> <span class='no'>p</span> + <span class='fu'>geom_point</span>() + <span class='fu'><a href='scale_fill_nima.html'>scale_fill_nima</a></span>() + <span class='fu'><a href='scale_color_nima.html'>scale_color_nima</a></span>() + <span class='fu'>theme_nima</span>()
-<span class='no'>p</span></div><img src='theme_nima-2.png' alt='' width='540' height='400' /><div class='input'>
-</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#value">Value</a></li>
-
-      <li><a href="#see-also">See also</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
+      <li><a href="#details">Details</a></li>
+          </ul>
 
   </div>
 </div>

@@ -29,4 +29,3 @@ qrD(h5)
 \seealso{
 \code{\link[base]{qr}}
 }
-

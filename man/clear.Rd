@@ -15,4 +15,3 @@ This function is merely a call to \code{system("clear")}
 \examples{
 \dontrun{system("clear")}
 }
-

@@ -18,4 +18,3 @@ Open files from R by using the default operating system program.
 \examples{
 \dontrun{openfile("myplot.pdf")}
 }
-

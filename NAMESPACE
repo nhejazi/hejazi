@@ -2,6 +2,7 @@
 
 export(absmax)
 export(attrnames)
+export(bioc)
 export(clear)
 export(commas)
 export(compFun)

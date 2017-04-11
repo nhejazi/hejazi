@@ -35,4 +35,3 @@ x <- as.data.frame(x)
 y <- as.data.frame(y)
 sum(!compFun(x,y))
 }
-
