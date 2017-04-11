@@ -17,7 +17,7 @@
 #'
 #' @examples
 #' library(ggplot2)
-#' p <- ggplot(mtcars, aes(y = mpg, x = disp, color = factor(cyl))) 
+#' p <- ggplot(mtcars, aes(y = mpg, x = disp, color = factor(cyl)))
 #' p <- p + geom_point() + scale_fill_nima() + scale_color_nima() + theme_nima()
 #' p
 #'
@@ -36,7 +36,7 @@ theme_nima <- function(base_size = 14, base_family = "Helvetica") {
                axis.title = element_text(face = "bold", size = rel(1)),
                axis.title.y = element_text(angle = 90, vjust = 2),
                axis.title.x = element_text(vjust = -0.2),
-               axis.text = element_text(), 
+               axis.text = element_text(),
                axis.line = element_line(colour = "black"),
                axis.ticks = element_line(),
                axis.ticks.length = unit(0, "cm"),
@@ -46,13 +46,13 @@ theme_nima <- function(base_size = 14, base_family = "Helvetica") {
                legend.position = "bottom",
                legend.direction = "horizontal",
                legend.key.size= unit(0.2, "cm"),
-               legend.margin = unit(0, "cm"),
+               legend.spacing = unit(0, "cm"),
                legend.title = element_text(face = "italic"),
                plot.margin = unit(c(10, 5, 5, 5), "mm"),
-               strip.background = element_rect(colour = "#f0f0f0", 
+               strip.background = element_rect(colour = "#f0f0f0",
                                                fill = "#f0f0f0"),
                strip.text = element_text(face = "bold")
-          ))     
+          ))
 }
 
 #' @rdname theme_nima

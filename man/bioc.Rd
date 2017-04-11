@@ -10,5 +10,5 @@ bioc()
 Load Bioconductor's "biocLite" function by wrapping "source".
 }
 \details{
-Just a call to \code{source("https://bioconductor.org/biocLite.R")}
+Wrapper to \code{source("https://bioconductor.org/biocLite.R")}
 }
