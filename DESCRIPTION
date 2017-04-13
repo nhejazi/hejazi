@@ -18,6 +18,7 @@ Imports:
   survival,
   gridExtra,
   assertthat,
+  ProjectTemplate,
   ggthemes,
   ggplot2,
   scales,

@@ -4,7 +4,7 @@
 #'
 #' @details Wrapper to \code{source("https://bioconductor.org/biocLite.R")}
 #'
-#' @export
+#' @export bioc
 #'
 
 bioc <- function() {
