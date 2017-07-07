@@ -3,6 +3,10 @@
 ^\.gitignore$
 ^\.travis\.yml$
 ^appveyor\.yml$
-^\README\.md$
 ^cran-comments\.md$
+^Makefile$
 ^docs$
+^README\.md$
+^README\.Rmd$
+^README\.html$
+^README-.*\.png$
