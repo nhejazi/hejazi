@@ -29,5 +29,6 @@ Suggests:
   testthat
 License: MIT + file LICENSE
 URL: https://github.com/nhejazi/nima
+BugReports: https://github.com/nhejazi/nima/issues
 LazyData: true
 RoxygenNote: 6.0.1
