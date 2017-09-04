@@ -23,14 +23,17 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-
+  
+  
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -49,6 +52,12 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="..//index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
@@ -81,15 +90,20 @@
     <p>Calculate the sizes of all of the objects in the workspace.</p>
     
 
-    <pre><span class='fu'>objsizes</span>(<span class='no'>obj</span>, <span class='kw'>bysize</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'>objsizes</span>(<span class='no'>obj</span>, <span class='kw'>bysize</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>obj</dt>
-      <dd>Vector of object names. If missing, pull out all object names.</dd>
-      <dt>bysize</dt>
-      <dd>If <code>TRUE</code>, sort the objects from smallest to largest.</dd>
-    </dl>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>obj</th>
+      <td><p>Vector of object names. If missing, pull out all object names.</p></td>
+    </tr>
+    <tr>
+      <th>bysize</th>
+      <td><p>If <code>TRUE</code>, sort the objects from smallest to largest.</p></td>
+    </tr>
+    </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
@@ -103,7 +117,9 @@ megabytes (Mb). The row names are the names of the objects.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>print</span>(<span class='no'>output</span> <span class='kw'>&lt;-</span> <span class='fu'>objsizes</span>())</div><div class='output co'>#&gt; [1] name Mb  
-#&gt; &lt;0 rows&gt; (or 0-length row.names)</div><div class='input'><span class='co'>## Not run: sum(output)</span></div></pre>
+#&gt; &lt;0 rows&gt; (or 0-length row.names)</div><span class='co'># NOT RUN {</span>
+<span class='fu'>sum</span>(<span class='no'>output</span>)
+<span class='co'># }</span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

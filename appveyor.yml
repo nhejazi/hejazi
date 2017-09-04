@@ -10,11 +10,16 @@ install:
   ps: Bootstrap
 
 cache:
-  - C:\RLibrary
+  - C:\RLibrary -> appveyor.yml
 
 # Adapt as necessary starting from here
+branches:
+  only:
+    - master
+
 build_script:
   - travis-tool.sh install_deps
+  - travis-tool.sh install_github jimhester/covr
 
 test_script:
   - travis-tool.sh run_tests
@@ -22,6 +27,9 @@ test_script:
 on_failure:
   - 7z a failure.zip *.Rcheck\*
   - appveyor PushArtifact failure.zip
+
+on_success:
+  - Rscript -e "covr::codecov(line_exclusions = list('R/plots.R', 'R/theme_nima.R'))"
 
 artifacts:
   - path: '*.Rcheck\**\*.log'

@@ -1,4 +1,4 @@
-#' Generate New Project Skeleton with ProjectTemplate
+#' New Project Skeleton
 #'
 #' Generate a skeleton for a data analysis project by calling ProjectTemplate
 #'
@@ -9,9 +9,9 @@
 #'
 #' @importFrom ProjectTemplate create.project
 #'
-#' @export newproj
+#' @export
 #'
-
 newproj <- function(name = "ProjectTemplate", minimal = TRUE, ...) {
   ProjectTemplate::create.project(project.name = name, minimal = minimal, ...)
 }
+

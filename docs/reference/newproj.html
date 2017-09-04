@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Generate New Project Skeleton with ProjectTemplate — newproj • nima</title>
+<title>New Project Skeleton — newproj • nima</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -23,14 +23,17 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-
+  
+  
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -49,6 +52,12 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="..//index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
@@ -74,25 +83,32 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Generate New Project Skeleton with ProjectTemplate</h1>
+    <h1>New Project Skeleton</h1>
     </div>
 
     
-    <p>Generate a skeleton for a data analysis project by calling R/ProjectTemplate</p>
+    <p>Generate a skeleton for a data analysis project by calling ProjectTemplate</p>
     
 
-    <pre><span class='fu'>newproj</span>(<span class='kw'>name</span> <span class='kw'>=</span> <span class='st'>"ProjectTemplate"</span>, <span class='kw'>minimal</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>newproj</span>(<span class='kw'>name</span> <span class='kw'>=</span> <span class='st'>"ProjectTemplate"</span>, <span class='kw'>minimal</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>name</dt>
-      <dd>(character) - the name to be given to the new project directory</dd>
-      <dt>minimal</dt>
-      <dd>(character) - option to set up only a minimal project
-directory, passed to <code>ProjectTemplate::create.project()</code></dd>
-      <dt>...</dt>
-      <dd>- options to be passed to <code>ProjectTemplate::create.project()</code></dd>
-    </dl>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>name</th>
+      <td><p>(character) - the name to be given to the new project directory</p></td>
+    </tr>
+    <tr>
+      <th>minimal</th>
+      <td><p>(character) - option to set up only a minimal project
+directory, passed to <code><a href='http://www.rdocumentation.org/packages/ProjectTemplate/topics/create.project'>ProjectTemplate::create.project()</a></code></p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>- options to be passed to <code><a href='http://www.rdocumentation.org/packages/ProjectTemplate/topics/create.project'>ProjectTemplate::create.project()</a></code></p></td>
+    </tr>
+    </table>
     
 
   </div>

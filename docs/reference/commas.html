@@ -23,14 +23,17 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-
+  
+  
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -49,6 +52,12 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="..//index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
@@ -81,22 +90,25 @@
     <p>Convert a number to a string, with commas inserted at every 3rd digit.</p>
     
 
-    <pre><span class='fu'>commas</span>(<span class='no'>numbers</span>)</pre>
+    <pre class="usage"><span class='fu'>commas</span>(<span class='no'>numbers</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>numbers</dt>
-      <dd>Vector of non-negative numbers (will be rounded to integers)</dd>
-    </dl>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>numbers</th>
+      <td><p>Vector of non-negative numbers (will be rounded to integers)</p></td>
+    </tr>
+    </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>Character string with numbers written like <code>&quot;5,771,009&quot;</code>.</p>
+    <p>Character string with numbers written like <code>"5,771,009"</code>.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>commas</span>(<span class='fu'>c</span>(<span class='fl'>2300</span>, <span class='fl'>9000</span>, <span class='fl'>21456</span>, <span class='fl'>987654890</span>, <span class='fl'>1256787</span>, <span class='fl'>345765</span>, <span class='fl'>1432</span>))</div><div class='output co'>#&gt; [1] &quot;2,300&quot;       &quot;9,000&quot;       &quot;21,456&quot;      &quot;987,654,890&quot; &quot;1,256,787&quot;  
-#&gt; [6] &quot;345,765&quot;     &quot;1,432&quot;      </div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>commas</span>(<span class='fu'>c</span>(<span class='fl'>2300</span>, <span class='fl'>9000</span>, <span class='fl'>21456</span>, <span class='fl'>987654890</span>, <span class='fl'>1256787</span>, <span class='fl'>345765</span>, <span class='fl'>1432</span>))</div><div class='output co'>#&gt; [1] "2,300"       "9,000"       "21,456"      "987,654,890" "1,256,787"  
+#&gt; [6] "345,765"     "1,432"      </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

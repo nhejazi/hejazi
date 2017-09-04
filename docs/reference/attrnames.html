@@ -23,14 +23,17 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-
+  
+  
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -49,6 +52,12 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="..//index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
@@ -81,13 +90,16 @@
     <p>Get the names of the attributes of an input object.</p>
     
 
-    <pre><span class='fu'>attrnames</span>(<span class='no'>obj</span>)</pre>
+    <pre class="usage"><span class='fu'>attrnames</span>(<span class='no'>obj</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>obj</dt>
-      <dd>Any object.</dd>
-    </dl>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>obj</th>
+      <td><p>Any object.</p></td>
+    </tr>
+    </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
@@ -97,7 +109,7 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'>matrix</span>(<span class='fl'>1</span>:<span class='fl'>100</span>, <span class='kw'>ncol</span><span class='kw'>=</span><span class='fl'>5</span>)
 <span class='fu'>colnames</span>(<span class='no'>x</span>) <span class='kw'>&lt;-</span> <span class='no'>LETTERS</span>[<span class='fl'>1</span>:<span class='fl'>5</span>]
-<span class='fu'>attrnames</span>(<span class='no'>x</span>)</div><div class='output co'>#&gt; [1] &quot;dim&quot;      &quot;dimnames&quot;</div></pre>
+<span class='fu'>attrnames</span>(<span class='no'>x</span>)</div><div class='output co'>#&gt; [1] "dim"      "dimnames"</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
