@@ -23,14 +23,17 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-
+  
+  
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -49,6 +52,12 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="..//index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
@@ -81,31 +90,44 @@
     <p>Produce standard quantile-quantile plots for modeling using ggplot2.</p>
     
 
-    <pre><span class='fu'>qqPlot_gg</span>(<span class='no'>x</span>, <span class='kw'>distribution</span> <span class='kw'>=</span> <span class='st'>"norm"</span>, <span class='no'>...</span>, <span class='kw'>line.estimate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+    <pre class="usage"><span class='fu'>qqPlot_gg</span>(<span class='no'>x</span>, <span class='kw'>distribution</span> <span class='kw'>=</span> <span class='st'>"norm"</span>, <span class='no'>...</span>, <span class='kw'>line.estimate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>conf</span> <span class='kw'>=</span> <span class='fl'>0.95</span>, <span class='kw'>labels</span> <span class='kw'>=</span> <span class='fu'>names</span>(<span class='no'>x</span>))</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>x</dt>
-      <dd>A numeric vector of residuals from a generalized linear model.</dd>
-      <dt>distribution</dt>
-      <dd>The reference probability distribution for residuals.</dd>
-      <dt>...</dt>
-      <dd>Any additional parameters to be passed to distribution functions.</dd>
-      <dt>line.estimate</dt>
-      <dd>Should quantiles be estimated, if so which quantiles?</dd>
-      <dt>conf</dt>
-      <dd>The confidence level to be used with confidence intervals.</dd>
-      <dt>labels</dt>
-      <dd>The names to be used when identifying points on the Q-Q plot.</dd>
-    </dl>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>A numeric vector of residuals from a generalized linear model.</p></td>
+    </tr>
+    <tr>
+      <th>distribution</th>
+      <td><p>The reference probability distribution for residuals.</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>Any additional parameters to be passed to distribution functions.</p></td>
+    </tr>
+    <tr>
+      <th>line.estimate</th>
+      <td><p>Should quantiles be estimated, if so which quantiles?</p></td>
+    </tr>
+    <tr>
+      <th>conf</th>
+      <td><p>The confidence level to be used with confidence intervals.</p></td>
+    </tr>
+    <tr>
+      <th>labels</th>
+      <td><p>The names to be used when identifying points on the Q-Q plot.</p></td>
+    </tr>
+    </table>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>n</span> <span class='kw'>&lt;-</span> <span class='fl'>100</span>; <span class='no'>x1</span> <span class='kw'>&lt;-</span> <span class='fu'>rnorm</span>(<span class='no'>n</span>); <span class='no'>y1</span> <span class='kw'>&lt;-</span> <span class='fu'>rnorm</span>(<span class='no'>n</span>);
 <span class='no'>linmod</span> <span class='kw'>&lt;-</span> <span class='fu'>lm</span>(<span class='no'>y1</span> ~ <span class='no'>x1</span>)
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='no'>linmod</span>$<span class='no'>residuals</span>
-<span class='fu'>qqPlot_gg</span>(<span class='no'>x</span>)</div><img src='qqPlot_gg-2.png' alt='' width='540' height='400' /></pre>
+<span class='fu'>qqPlot_gg</span>(<span class='no'>x</span>)</div><div class='img'><img src='qqPlot_gg-1.png' alt='' width='700' height='432.632880098887' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

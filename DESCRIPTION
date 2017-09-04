@@ -11,7 +11,6 @@ Description: Miscellaneous R functions developed over the course of statistical
 Depends:
   R (>= 3.2.3)
 Imports:
-  plyr,
   utils,
   stats,
   gtools,
@@ -19,12 +18,13 @@ Imports:
   gridExtra,
   assertthat,
   ProjectTemplate,
+  devtools,
   ggthemes,
   ggplot2,
   scales,
+  plyr,
   grid
 Suggests:
-  devtools,
   roxygen2,
   testthat
 License: MIT + file LICENSE

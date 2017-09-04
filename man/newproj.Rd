@@ -2,7 +2,7 @@
 % Please edit documentation in R/newprojs.R
 \name{newproj}
 \alias{newproj}
-\title{Generate New Project Skeleton with ProjectTemplate}
+\title{New Project Skeleton}
 \usage{
 newproj(name = "ProjectTemplate", minimal = TRUE, ...)
 }
@@ -15,5 +15,5 @@ directory, passed to \code{ProjectTemplate::create.project()}}
 \item{...}{- options to be passed to \code{ProjectTemplate::create.project()}}
 }
 \description{
-Generate a skeleton for a data analysis project by calling R/ProjectTemplate
+Generate a skeleton for a data analysis project by calling ProjectTemplate
 }

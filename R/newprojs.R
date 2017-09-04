@@ -1,6 +1,6 @@
-#' Generate New Project Skeleton with ProjectTemplate
+#' New Project Skeleton
 #'
-#' Generate a skeleton for a data analysis project by calling R/ProjectTemplate
+#' Generate a skeleton for a data analysis project by calling ProjectTemplate
 #'
 #' @param name (character) - the name to be given to the new project directory
 #' @param minimal (character) - option to set up only a minimal project
@@ -9,9 +9,9 @@
 #'
 #' @importFrom ProjectTemplate create.project
 #'
-#' @export newproj
+#' @export
 #'
-
 newproj <- function(name = "ProjectTemplate", minimal = TRUE, ...) {
   ProjectTemplate::create.project(project.name = name, minimal = minimal, ...)
 }
+
