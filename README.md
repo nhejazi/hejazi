@@ -11,34 +11,26 @@ R/`nima`
 
 ------------------------------------------------------------------------
 
-Description
------------
+What's `nima`?
+--------------
 
-[R/nima](http://nimahejazi.org/nima) is an [R](http://www.r-project.org) package comprised of miscellaneous personal tools that are useful to me.
-
-This package is made public for my own convenience, with no guarantees whatsoever.
+[R/nima](http://nimahejazi.org/nima) is an [R](http://www.r-project.org) package comprised of miscellaneous personal tools that are useful to me. This package is made public for my own convenience, with no guarantees whatsoever. Accordingly, it will be regularly updated, possibly with breaking changes. Despite this, I will make every effort to ensure that any R code relying on this package is not broken by an update. That said, *caveat emptor*: use `nima` only at your own risk. For complete documentation, consider consulting the website accompanying the package [here](http://nimahejazi.org/nima/).
 
 ------------------------------------------------------------------------
 
 Installation
 ------------
 
-Install a fairly recent *stable release* from CRAN:
+Install a recent *stable release* from CRAN:
 
 ``` r
 install.packages("nima")
 ```
 
-Install the most recent *stable release* from GitHub via [`devtools`](https://www.rstudio.com/products/rpackages/devtools/):
+Install the stable *development version* from GitHub via [`devtools`](https://www.rstudio.com/products/rpackages/devtools/):
 
 ``` r
 devtools::install_github("nhejazi/nima")
-```
-
-Install the *development version* from GitHub via [`devtools`](https://www.rstudio.com/products/rpackages/devtools/):
-
-``` r
-devtools::install_github("nhejazi/nima", ref = "develop")
 ```
 
 ------------------------------------------------------------------------
