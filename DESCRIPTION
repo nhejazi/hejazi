@@ -1,6 +1,6 @@
 Package: nima
 Title: Nima Hejazi's R Toolbox
-Version: 0.4.0
+Version: 0.4.5
 Authors@R: as.person(c(
   "Nima Hejazi <nhejazi@berkeley.edu> [aut, cre]"))
 Description: Miscellaneous R functions developed over the course of statistical
