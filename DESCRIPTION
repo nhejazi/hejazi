@@ -1,14 +1,14 @@
 Package: nima
 Title: Nima Hejazi's R Toolbox
-Version: 0.4.5
+Version: 0.4.6
 Authors@R: person("Nima", "Hejazi", role = c("aut", "cre", "cph"),
-  email = "nhejazi@berkeley.edu")
-Description: Miscellaneous R functions developed over the course of statistical
+                  email = "nh@nimahejazi.org",
+                  comment = c(ORCID = "0000-0002-7127-2789"))
+Description: Miscellaneous R functions developed as aids for statistical
   research and scientific computing. These include, for example, utilities that
   supplement the existing idiosyncrasies of the R language, extend existing
   plotting functionality and aesthetics, provide alternative presentations of
-  matrix decompositions, and extend access to command line tools and
-  systems-level information.
+  matrix decompositions, and enhance access to systems-level information.
 Depends:
   R (>= 3.2.3)
 Imports:
@@ -33,4 +33,3 @@ URL: https://github.com/nhejazi/nima
 BugReports: https://github.com/nhejazi/nima/issues
 LazyData: true
 RoxygenNote: 6.0.1
-
