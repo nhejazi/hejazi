@@ -27,6 +27,9 @@ knitr::opts_chunk$set(
 
 __Author:__ [Nima Hejazi](http://nimahejazi.org)
 
+<img style="float: right; margin-right: 5%; margin-bottom: 1.5em"
+     src='./hex/nima_sticker.pdf' alt='origami package hex logo' width='100'>
+
 ---
 
 ## What's `nima`?
