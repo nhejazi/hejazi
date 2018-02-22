@@ -1,4 +1,5 @@
 .onAttach <- function(...) {
-  packageStartupMessage("nima: Nima Hejazi's R Toolbox")
-  packageStartupMessage("Version: ", utils::packageDescription("nima")$Version)
+  packageStartupMessage(paste0("nima v",
+                               utils::packageDescription("nima")$Version,
+                               ": Nima Hejazi's R Toolbox"))
 }
