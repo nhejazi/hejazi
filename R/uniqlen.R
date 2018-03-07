@@ -15,8 +15,8 @@
 #' uniqlen(x, na.rm=FALSE)
 
 uniqlen <- function(vec, na.rm=TRUE) {
-    if(na.rm && !is.null(vec)) {
-       vec <- vec[!is.na(vec)]
-    }
-    length(unique(vec))
+  if (na.rm && !is.null(vec)) {
+    vec <- vec[!is.na(vec)]
+  }
+  length(unique(vec))
 }

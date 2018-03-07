@@ -23,22 +23,22 @@ knitr::opts_chunk$set(
 
 > A collection of miscellaneous tools comprising the [personal R
 > package](http://hilaryparker.com/2013/04/03/personal-r-packages/) of
-> [Nima Hejazi](http://nimahejazi.org/pages/about.html)
+> [Nima Hejazi](https://nimahejazi.org/about/)
 
-__Author:__ [Nima Hejazi](http://nimahejazi.org)
+__Author:__ [Nima Hejazi](https://nimahejazi.org)
 
 ---
 
 ## What's `nima`?
 
-[R/nima](http://nimahejazi.org/nima) is an [R](http://www.r-project.org)
+[R/nima](http://code.nimahejazi.org/nima) is an [R](http://www.r-project.org)
 package comprised of miscellaneous personal tools that are useful to me. This
 package is made public for my own convenience, with no guarantees whatsoever.
 Accordingly, it will be regularly updated, possibly with breaking changes.
 Despite this, I will make every effort to ensure that any R code relying on this
 package is not broken by an update. That said, _caveat emptor_: use `nima` only
 at your own risk. For complete documentation, consider consulting the website
-accompanying the package [here](http://nimahejazi.org/nima/).
+accompanying the package [here](http://code.nimahejazi.org/nima).
 
 ---
 
@@ -68,14 +68,14 @@ issue](https://github.com/nhejazi/nima/issues).
 
 ## License
 
-&copy; 2016-2017 [Nima S. Hejazi](http://nimahejazi.org)
+&copy; 2016-2018 [Nima S. Hejazi](https://nimahejazi.org)
 
 The contents of this repository are distributed under the MIT license. See
 below for details:
 ```
 The MIT License (MIT)
 
-Copyright (c) 2016-2017 Nima S. Hejazi
+Copyright (c) 2016-2018 Nima S. Hejazi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
