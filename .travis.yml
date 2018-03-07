@@ -16,7 +16,7 @@ r_github_packages:
   - jimhester/covr
 
 after_success:
-  - Rscript -e "covr::codecov(line_exclusions = list('R/plots.R', 'R/theme_nima.R', 'R/theme_jetblack'))"
+  - Rscript -e "covr::package_coverage(type = 'all', combine_types = FALSE, line_exclusions = list('R/plots.R', 'R/theme_nima.R', 'R/theme_jetblack.R', 'R/bioc.R', 'R/newpkgs.R', 'R/newprojs.R', 'R/utilities.R'))"
 
 notifications:
   email:
