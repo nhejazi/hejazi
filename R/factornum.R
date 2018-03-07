@@ -13,8 +13,8 @@
 #' factornum(x)
 
 factornum <- function(x) {
-    factornames <- names(x)
-    x <- as.numeric(as.character(x))
-    names(x) <- factornames
-    return(x)
+  factornames <- names(x)
+  x <- as.numeric(as.character(x))
+  names(x) <- factornames
+  return(x)
 }

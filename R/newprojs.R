@@ -14,4 +14,3 @@
 newproj <- function(name = "ProjectTemplate", minimal = TRUE, ...) {
   ProjectTemplate::create.project(project.name = name, minimal = minimal, ...)
 }
-

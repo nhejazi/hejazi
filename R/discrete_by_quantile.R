@@ -15,7 +15,7 @@
 #' discrete_by_quantile(x)
 
 discrete_by_quantile <- function(x) {
-  if( class(x) != "factor" ) {
+  if (class(x) != "factor") {
     as.numeric(gtools::quantcut(x))
   } else {
     as.numeric(x)

@@ -27,7 +27,7 @@ exit <- function() q("no")
 #' \code{\link[utils]{help}}, \code{\link[utils]{help.start}}
 
 hweb <- function(...) {
-    utils::help(..., help_type = "html")
+  utils::help(..., help_type = "html")
 }
 
 
@@ -59,5 +59,5 @@ clear <- function() system("clear")
 #' \dontrun{openfile("myplot.pdf")}
 
 openfile <- function(file) {
-    system( paste("open", file) )
+  system(paste("open", file))
 }
