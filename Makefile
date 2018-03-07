@@ -15,7 +15,7 @@ test:
 	Rscript -e "devtools::test()"
 
 cov:
-	Rscript -e "covr::package_coverage(type = 'all', combine_types = FALSE, line_exclusions = list('R/plots.R', 'R/theme_nima.R', 'R/theme_black'))"
+	Rscript -e "covr::package_coverage(type = 'all', combine_types = FALSE, line_exclusions = list('R/plots.R', 'R/theme_nima.R', 'R/theme_jetblack'))"
 
 doc:
 	Rscript -e "devtools::document()"
