@@ -1,3 +1,8 @@
+March 23, 2018:
+* Fix a broken test (due to use of `all.equal` instead of `identical`) in
+    R-devel, based on report by CRAN
+* Add hex sticker for package based on art work by GL
+
 September 20, 2016:
 * Addition of several functions, re-written DESCRIPTION file. Update of package
     version to v. 0.4.0. This version update to be released on CRAN.

@@ -7,6 +7,7 @@
 ^cran-comments\.md$
 ^Makefile$
 ^docs$
+^hex$
 ^README\.md$
 ^README\.Rmd$
 ^README\.html$

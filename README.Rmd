@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# R/`nima`
+# R/`nima` <img src="./hex/nima_sticker.png" align="right" width='125'/>
 
 [![Travis-CI Build](https://travis-ci.org/nhejazi/nima.svg?branch=master)](https://travis-ci.org/nhejazi/nima)
 [![AppVeyor Build](https://ci.appveyor.com/api/projects/status/github/nhejazi/nima?branch=master&svg=true)](https://ci.appveyor.com/project/nhejazi/nima)
