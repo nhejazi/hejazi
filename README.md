@@ -10,6 +10,8 @@ Build](https://ci.appveyor.com/api/projects/status/github/nhejazi/nima?branch=ma
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/nhejazi/nima/master.svg)](https://codecov.io/github/nhejazi/nima?branch=master)
 [![CRAN](http://www.r-pkg.org/badges/version/nima)](http://www.r-pkg.org/pkg/nima)
+[![CRAN
+downloads](https://cranlogs.r-pkg.org/badges/nima)](https://CRAN.R-project.org/package=nima)
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
