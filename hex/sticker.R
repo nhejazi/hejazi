@@ -2,7 +2,7 @@ library(hexSticker)
 library(here)
 
 img_path <- here("hex", "nima_v2.png")
-sticker_path <- here("hex", "nima_sticker.pdf")
+sticker_path <- here("hex", "nima_sticker.png")
 
 sticker(img_path, package = "",
         p_color = "#242A30", p_size = 5, p_x = 1, p_y = 0.3,

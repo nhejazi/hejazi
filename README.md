@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# R/`nima`
+# R/`nima` <img src="./hex/nima_sticker.png" align="right" width='125'/>
 
 [![Travis-CI
 Build](https://travis-ci.org/nhejazi/nima.svg?branch=master)](https://travis-ci.org/nhejazi/nima)
@@ -21,9 +21,6 @@ license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://openso
 > [Nima Hejazi](https://nimahejazi.org/about/)
 
 **Author:** [Nima Hejazi](https://nimahejazi.org)
-
-<img style="float: right; margin-right: 5%; margin-bottom: 1.5em"
-     src='./hex/nima_sticker.pdf' alt='origami package hex logo' width='100'>
 
 -----
 
