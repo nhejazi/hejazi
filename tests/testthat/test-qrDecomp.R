@@ -3,7 +3,7 @@ context("Performing a (readable) QR matrix decomposition")
 
 test_that("qrD performs a QR decomposition that reconstructs original matrix", {
   hilbert <- function(n) {
-    i <- 1:n
+    i <- seq_len(n)
     1 / outer(i - 1, i, "+")
   }
   expect_equal(qrD(hilbert(5))$q %*% qrD(hilbert(5))$r, hilbert(5))
