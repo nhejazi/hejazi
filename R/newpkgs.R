@@ -22,4 +22,3 @@ newpkg <- function(name = "new_pkg") {
   devtools::use_testthat()
   devtools::use_travis()
 }
-

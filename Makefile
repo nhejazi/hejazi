@@ -10,12 +10,21 @@ check:
 
 checkfast:
 	Rscript -e "devtools::check(build_args = '--no-build-vignettes')"
+<<<<<<< HEAD
 
 bioc:
 	Rscript -e "BiocCheck::BiocCheck('.')"
 
 test:
 	Rscript -e "devtools::test()"
+=======
+
+test:
+	Rscript -e "devtools::test()"
+
+cov:
+	Rscript -e "covr::package_coverage(type = 'all', combine_types = FALSE, line_exclusions = list('R/plots.R', 'R/theme_nima.R', 'R/theme_jetblack.R', 'R/bioc.R', 'R/newpkgs.R', 'R/newprojs.R', 'R/utilities.R'))"
+>>>>>>> df048ec9193528c5ddefa588ee201fcb5c5c00b5
 
 doc:
 	Rscript -e "devtools::document()"
@@ -25,6 +34,13 @@ build:
 
 buildfast:
 	Rscript -e "devtools::build(vignettes = FALSE)"
+<<<<<<< HEAD
 
 style:
 	Rscript -e "styler::style_pkg()"
+=======
+
+style:
+	Rscript -e "styler::style_pkg()"
+
+>>>>>>> df048ec9193528c5ddefa588ee201fcb5c5c00b5

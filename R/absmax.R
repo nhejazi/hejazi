@@ -14,5 +14,5 @@
 #' absmax(x)
 
 absmax <- function(x, na.rm = FALSE) {
-    max(abs(x), na.rm = na.rm)
+  max(abs(x), na.rm = na.rm)
 }

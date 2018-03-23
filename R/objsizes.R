@@ -23,16 +23,16 @@ utils::globalVariables(c("bysize", "Mb"))
 #' \dontrun{sum(output)}
 
 objsizes <- function(obj, bysize = TRUE) {
-    if (missing(obj)) {
-      obj <- objects(pos = 1)
-    }
-    result <- data.frame(name = rep(NA, length(obj)), Mb = rep(0, length(obj)))
-    result$name <- obj
-    for (i in seq(along = obj)) {
-      result[i, 2] <- (utils::object.size(get(obj[i], pos = 1)) / 1024 ^ 2)
-    }
-    if (bysize == TRUE) {
-      result <- plyr::arrange(result, Mb, decreasing = TRUE)
-    }
-    return(result)
+  if (missing(obj)) {
+    obj <- objects(pos = 1)
+  }
+  result <- data.frame(name = rep(NA, length(obj)), Mb = rep(0, length(obj)))
+  result$name <- obj
+  for (i in seq(along = obj)) {
+    result[i, 2] <- (utils::object.size(get(obj[i], pos = 1)) / 1024 ^ 2)
+  }
+  if (bysize == TRUE) {
+    result <- plyr::arrange(result, Mb, decreasing = TRUE)
+  }
+  return(result)
 }

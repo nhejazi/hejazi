@@ -16,9 +16,9 @@
 #' data <- miss_ind(data)
 
 miss_ind <- function(data, prefix = "miss_") {
-  indicators = sapply(data, FUN = function(col) as.numeric(is.na(col)))
-  colnames(indicators) = paste0(prefix, colnames(data))
-  indicators = indicators[, !colMeans(indicators) %in% c(0, 1)]
+  indicators <- sapply(data, FUN = function(col) as.numeric(is.na(col)))
+  colnames(indicators) <- paste0(prefix, colnames(data))
+  indicators <- indicators[, !colMeans(indicators) %in% c(0, 1)]
   out <- cbind(data, indicators)
   return(out)
 }

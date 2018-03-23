@@ -33,7 +33,7 @@ qqPlot_gg <- function(x, distribution = "norm", ..., line.estimate = NULL,
   P <- ppoints(length(x))
   df <- data.frame(ord.x = x[ord], z = q.function(P, ...))
 
-  if(is.null(line.estimate)) {
+  if (is.null(line.estimate)) {
     Q.x <- quantile(df$ord.x, c(0.25, 0.75))
     Q.z <- q.function(c(0.25, 0.75), ...)
     b <- (diff(Q.x) / diff(Q.z))
@@ -42,14 +42,14 @@ qqPlot_gg <- function(x, distribution = "norm", ..., line.estimate = NULL,
     coef <- coef(line.estimate(ord.x ~ z))
   }
 
-  zz <- qnorm(1 - ( (1 - conf) / 2))
-  SE <- (coef[2] / d.function(df$z)) * sqrt(P * ( (1 - P) / n))
+  zz <- qnorm(1 - ((1 - conf) / 2))
+  SE <- (coef[2] / d.function(df$z)) * sqrt(P * ((1 - P) / n))
   fit.value <- coef[1] + coef[2] * df$z
   df$upper <- fit.value + zz * SE
   df$lower <- fit.value - zz * SE
 
-  if(!is.null(labels)) {
-    df$label <- ifelse(df$ord.x > df$upper | df$ord.x < df$lower,labels[ord],"")
+  if (!is.null(labels)) {
+    df$label <- ifelse(df$ord.x > df$upper | df$ord.x < df$lower, labels[ord], "")
   }
 
   p <- ggplot(df, aes(x = z, y = ord.x)) +
@@ -58,8 +58,8 @@ qqPlot_gg <- function(x, distribution = "norm", ..., line.estimate = NULL,
     geom_ribbon(aes(ymin = lower, ymax = upper), alpha = 0.2) +
     ylab("Model Residual Quantiles") + xlab("Theoretical Quantiles") +
     ggtitle("Quantile Plot Residuals")
-  if(!is.null(labels)) {
-    p <- p + geom_text( aes(label = label))
+  if (!is.null(labels)) {
+    p <- p + geom_text(aes(label = label))
   }
   return(p)
 }
@@ -69,10 +69,12 @@ qqPlot_gg <- function(x, distribution = "norm", ..., line.estimate = NULL,
 ########### NEXT FUNCTION ###########
 #####################################
 
-utils::globalVariables(c("aes", ".fitted", ".resid", "geom_point", ".stdresid",
-                       "geom_hline", "xlab", "ylab", "ggtitle", "stat_smooth",
-                       "geom_abline", ".cooksd", "geom_bar", ".hat", "theme",
-                       "scale_size_continuous"))
+utils::globalVariables(c(
+  "aes", ".fitted", ".resid", "geom_point", ".stdresid",
+  "geom_hline", "xlab", "ylab", "ggtitle", "stat_smooth",
+  "geom_abline", ".cooksd", "geom_bar", ".hat", "theme",
+  "scale_size_continuous"
+))
 
 #' Linear Model Diagnostic Plots with ggplot2
 #'
@@ -93,34 +95,34 @@ utils::globalVariables(c("aes", ".fitted", ".resid", "geom_point", ".stdresid",
 
 lmPlots_gg <- function(model) {
   p1 <- ggplot(model, aes(x = .fitted, y = .resid)) + geom_point() +
-        stat_smooth(method = "loess") +
-        geom_hline(yintercept = 0, col = "red", linetype = "dashed") +
-        xlab("Fitted vals") + ylab("Residuals") + ggtitle("Residual vs. Fitted")
+    stat_smooth(method = "loess") +
+    geom_hline(yintercept = 0, col = "red", linetype = "dashed") +
+    xlab("Fitted vals") + ylab("Residuals") + ggtitle("Residual vs. Fitted")
 
   p2 <- ggplot(model, aes(sample = .stdresid)) + geom_point(stat = "qq") +
-        geom_abline() + xlab("Theoretical Quantiles") + ylab("Std. Residuals") +
-        ggtitle("Gausian Q-Q")
+    geom_abline() + xlab("Theoretical Quantiles") + ylab("Std. Residuals") +
+    ggtitle("Gausian Q-Q")
 
   p3 <- ggplot(model, aes(x = .fitted, y = sqrt(abs(.stdresid)))) +
-        geom_point(na.rm = TRUE) + stat_smooth(method = "loess", na.rm = TRUE) +
-        xlab("Fitted Value") + ylab(expression(sqrt("|Std. residuals|"))) +
-        ggtitle("Scale-Location")
+    geom_point(na.rm = TRUE) + stat_smooth(method = "loess", na.rm = TRUE) +
+    xlab("Fitted Value") + ylab(expression(sqrt("|Std. residuals|"))) +
+    ggtitle("Scale-Location")
 
   p4 <- ggplot(model, aes(x = seq_along(.cooksd), y = .cooksd)) +
-        geom_bar(stat = "identity", position = "identity") +
-        xlab("Obs. No.") + ylab("Cook's distance") + ggtitle("Cook's distance")
+    geom_bar(stat = "identity", position = "identity") +
+    xlab("Obs. No.") + ylab("Cook's distance") + ggtitle("Cook's distance")
 
   p5 <- ggplot(model, aes(x = .hat, y = .stdresid)) +
-        geom_point(aes(size = .cooksd), na.rm = TRUE) +
-        stat_smooth(method = "loess", na.rm = TRUE) + xlab("Leverage") +
-        ggtitle("Resid. vs Leverage") + ylab("Std. Resid.") +
-        scale_size_continuous("Cook's Distance", range = c(1,5)) +
-        theme(legend.position = "none")
+    geom_point(aes(size = .cooksd), na.rm = TRUE) +
+    stat_smooth(method = "loess", na.rm = TRUE) + xlab("Leverage") +
+    ggtitle("Resid. vs Leverage") + ylab("Std. Resid.") +
+    scale_size_continuous("Cook's Distance", range = c(1, 5)) +
+    theme(legend.position = "none")
 
   p6 <- ggplot(model, aes(x = .hat, y = .cooksd)) + geom_point(na.rm = TRUE) +
-        stat_smooth(method = "loess", na.rm = TRUE) + xlab("Leverage") +
-        ylab("Cook's Distance") + ggtitle("Cook's dist. vs. Lev.") +
-        geom_abline(slope = seq(0,3,0.5), color = "gray", linetype = "dashed")
+    stat_smooth(method = "loess", na.rm = TRUE) + xlab("Leverage") +
+    ylab("Cook's Distance") + ggtitle("Cook's dist. vs. Lev.") +
+    geom_abline(slope = seq(0, 3, 0.5), color = "gray", linetype = "dashed")
 
   return(gridExtra::grid.arrange(p1, p2, p3, p4, p5, p6, nrow = 2, ncol = 3))
 }

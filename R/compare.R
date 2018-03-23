@@ -37,9 +37,9 @@ compFun <- function(a, b) {
   }
   if (class(a) == "list") {
     for (i in seq(along = a)) {
-          a[[i]] <- comp_fun(a[[i]], b[[i]])
-        }
-        a
+      a[[i]] <- comp_fun(a[[i]], b[[i]])
+    }
+    a
   } else {
     comp_fun(a, b)
   }
