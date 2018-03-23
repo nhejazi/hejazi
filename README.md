@@ -18,9 +18,9 @@ developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repo
 [![MIT
 license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-> A collection of miscellaneous tools comprising the [personal R
+> The [personal R
 > package](http://hilaryparker.com/2013/04/03/personal-r-packages/) of
-> [Nima Hejazi](https://nimahejazi.org/about/)
+> [Nima Hejazi](https://nimahejazi.org)
 
 **Author:** [Nima Hejazi](https://nimahejazi.org)
 
@@ -28,14 +28,12 @@ license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://openso
 
 ## What’s `nima`?
 
-[R/nima](http://code.nimahejazi.org/nima) is an
-[R](http://www.r-project.org) package comprised of miscellaneous
-personal tools that are useful to me. This package is made public for my
-own convenience, with no guarantees whatsoever. Accordingly, it will be
-regularly updated, possibly with breaking changes. Despite this, I will
-make every effort to ensure that any R code relying on this package is
-not broken by an update. That said, *caveat emptor*: use `nima` only at
-your own risk. For complete documentation, consider consulting the
+[R/nima](http://code.nimahejazi.org/nima) is a miscellaneous collection
+of tools that have proven useful to me over years of statistical
+research and scientific computing. This package is made public for my
+own convenience, with no guarantees whatsoever – *caveat emptor:* use
+`nima` only at your own risk. Since this [R](https://www.r-project.org/)
+package is a quite eclectic collection of tools, consider consulting the
 website accompanying the package
 [here](http://code.nimahejazi.org/nima).
 
