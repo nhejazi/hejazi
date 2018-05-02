@@ -1,3 +1,7 @@
+May 02, 2018:
+* Fix a broken unit test for R 3.5.0, changing the use of `identical` for a
+    combination of `expect_true` and `setequal`
+
 March 23, 2018:
 * Fix a broken test (due to use of `all.equal` instead of `identical`) in
     R-devel, based on report by CRAN
