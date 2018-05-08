@@ -20,8 +20,8 @@ utils::globalVariables(c("bysize", "Mb"))
 #'
 #' @examples
 #' print(output <- objsizes())
-#' \dontrun{sum(output)}
-
+#' \donttest{sum(output)}
+#
 objsizes <- function(obj, bysize = TRUE) {
   if (missing(obj)) {
     obj <- objects(pos = 1)

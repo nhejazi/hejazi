@@ -22,7 +22,7 @@ utils::globalVariables(c("ord.x", "z", "lower", "upper", "label"))
 #' linmod <- lm(y1 ~ x1)
 #' x <- linmod$residuals
 #' qqPlot_gg(x)
-
+#
 qqPlot_gg <- function(x, distribution = "norm", ..., line.estimate = NULL,
                       conf = 0.95, labels = names(x)) {
   q.function <- eval(parse(text = paste0("q", distribution)))
@@ -65,9 +65,9 @@ qqPlot_gg <- function(x, distribution = "norm", ..., line.estimate = NULL,
 }
 
 
-#####################################
-########### NEXT FUNCTION ###########
-#####################################
+################################################################################
+## NEXT FUNCTION                                                              ##
+################################################################################
 
 utils::globalVariables(c(
   "aes", ".fitted", ".resid", "geom_point", ".stdresid",
@@ -92,7 +92,7 @@ utils::globalVariables(c(
 #' n <- 100; x1 <- rnorm(n); y1 <- rnorm(n);
 #' linmod <- lm(y1 ~ x1)
 #' lmPlots_gg(linmod)
-
+#
 lmPlots_gg <- function(model) {
   p1 <- ggplot(model, aes(x = .fitted, y = .resid)) + geom_point() +
     stat_smooth(method = "loess") +

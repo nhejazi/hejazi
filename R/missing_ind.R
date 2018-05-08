@@ -1,4 +1,4 @@
-#' Add missingness indicators to existing data.frame
+#' Add missingness indicators to existing data object
 #'
 #' Add indicator columns to a data.frame showing the pattern of missingness.
 #'
@@ -14,7 +14,7 @@
 #' data[sample(nrow(data), 3), 1] <- NA
 #' data[sample(nrow(data), 4), 2] <- NA
 #' data <- miss_ind(data)
-
+#
 miss_ind <- function(data, prefix = "miss_") {
   indicators <- sapply(data, FUN = function(col) as.numeric(is.na(col)))
   colnames(indicators) <- paste0(prefix, colnames(data))

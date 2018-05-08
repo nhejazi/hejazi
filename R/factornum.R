@@ -11,7 +11,7 @@
 #' @examples
 #' x <- factor(c(3, 4, 9, 4, 9), levels = c(3,4,9))
 #' factornum(x)
-
+#
 factornum <- function(x) {
   factornames <- names(x)
   x <- as.numeric(as.character(x))

@@ -75,7 +75,7 @@ nima_theme <- theme_nima
 #'
 #' @export
 #'
-
+#
 scale_fill_nima <- function(...) {
   discrete_scale(
     "fill", "nima",
@@ -99,7 +99,7 @@ scale_fill_nima <- function(...) {
 #'
 #' @export
 #'
-
+#
 scale_color_nima <- function(...) {
   discrete_scale(
     "colour", "nima",

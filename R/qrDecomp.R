@@ -20,7 +20,7 @@
 #'
 #' @seealso
 #' \code{\link[base]{qr}}
-
+#
 qrD <- function(x, tol = 1e-7) {
   qq <- qr(x, tol = tol)
   p <- ncol(x)

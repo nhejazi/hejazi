@@ -5,7 +5,7 @@
 #' @details This function is merely a call to \code{q("no")}.
 #'
 #' @export
-
+#
 exit <- function() q("no")
 
 
@@ -21,11 +21,11 @@ exit <- function() q("no")
 #' @export
 #'
 #' @examples
-#' \dontrun{hweb(read.table)}
+#' \donttest{hweb(read.table)}
 #'
 #' @seealso
 #' \code{\link[utils]{help}}, \code{\link[utils]{help.start}}
-
+#
 hweb <- function(...) {
   utils::help(..., help_type = "html")
 }
@@ -40,8 +40,8 @@ hweb <- function(...) {
 #' @export
 #'
 #' @examples
-#' \dontrun{system("clear")}
-
+#' \donttest{system("clear")}
+#
 clear <- function() system("clear")
 
 
@@ -56,8 +56,8 @@ clear <- function() system("clear")
 #' @export
 #'
 #' @examples
-#' \dontrun{openfile("myplot.pdf")}
-
+#' \donttest{openfile("myplot.pdf")}
+#
 openfile <- function(file) {
   system(paste("open", file))
 }
