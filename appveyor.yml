@@ -6,6 +6,7 @@ init:
         $ErrorActionPreference = "Stop"
         Invoke-WebRequest http://raw.github.com/krlmlr/r-appveyor/master/scripts/appveyor-tool.ps1 -OutFile "..\appveyor-tool.ps1"
         Import-Module '..\appveyor-tool.ps1'
+
 install:
   ps: Bootstrap
 
@@ -23,8 +24,13 @@ environment:
     R_ARCH: x64
     USE_RTOOLS: true
 
+  matrix:
+    - R_VERSION: release
+
 build_script:
   - travis-tool.sh install_deps
+  - travis-tool.sh install_github r-lib/devtools
+  - travis-tool.sh install_github jimhester/covr
 
 test_script:
   - travis-tool.sh run_tests
@@ -61,3 +67,4 @@ notifications:
    on_build_success: false
    on_build_failure: true
    on_build_status_changed: true
+

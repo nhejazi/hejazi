@@ -25,9 +25,12 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
 <meta property="og:title" content="Function reference" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -50,8 +53,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">nima</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">nima</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.5.0</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -64,7 +71,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -76,6 +83,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -83,166 +91,161 @@
       
       </header>
 
-      <div class="row">
-  <div class="col-md-9">
+<div class="row">
+  <div class="contents col-md-9">
     <div class="page-header">
-      <h1>
-        Reference
-        <small>version&nbsp;0.4.7</small>
-      </h1>
+      <h1>Reference</h1>
     </div>
 
-    <div class="contents">
-      <table class="ref-index">
+    <table class="ref-index">
 
-      <colgroup>
-        <col class="alias" />
-        <col class="title" />
-      </colgroup>
+    <colgroup>
+      <col class="alias" />
+      <col class="title" />
+    </colgroup>
 
-      <tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="absmax.html">absmax</a></code> </p>
-          </td>
-          <td><p>Maximum of Absolute Values of Vector</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="attrnames.html">attrnames</a></code> </p>
-          </td>
-          <td><p>Get Names of Attributes</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="bioc.html">bioc</a></code> </p>
-          </td>
-          <td><p>Conveniently Load Bioconductor</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="clear.html">clear</a></code> </p>
-          </td>
-          <td><p>Clear the Current Screen/Buffer</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="commas.html">commas</a></code> </p>
-          </td>
-          <td><p>Add Commas to a Large Number</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="compFun.html">compFun</a></code> </p>
-          </td>
-          <td><p>Compare Two Similar Objects including Missing Data Patterns.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="discrete_by_quantile.html">discrete_by_quantile</a></code> </p>
-          </td>
-          <td><p>Discretize a vector</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="exit.html">exit</a></code> </p>
-          </td>
-          <td><p>Exit R Without Saving</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="factornum.html">factornum</a></code> </p>
-          </td>
-          <td><p>Convert a Factor to Numeric</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="hweb.html">hweb</a></code> </p>
-          </td>
-          <td><p>View HTML Version of Help Files</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="lmPlots_gg.html">lmPlots_gg</a></code> </p>
-          </td>
-          <td><p>Linear Model Diagnostic Plots with ggplot2</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="miss_ind.html">miss_ind</a></code> </p>
-          </td>
-          <td><p>Add missingness indicators to existing data.frame</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="mse.html">mse</a></code> </p>
-          </td>
-          <td><p>Mean Squared Error (MSE)</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="objsizes.html">objsizes</a></code> </p>
-          </td>
-          <td><p>Calculate Sizes of Objects in Workspace</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="openfile.html">openfile</a></code> </p>
-          </td>
-          <td><p>Open a File</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="qqPlot_gg.html">qqPlot_gg</a></code> </p>
-          </td>
-          <td><p>Quantile-Quantile Plots with ggplot2</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="qrD.html">qrD</a></code> </p>
-          </td>
-          <td><p>The QR decomposition of a matrix</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="scale_color_nima.html">scale_color_nima</a></code> </p>
-          </td>
-          <td><p>Nima's ggplot2 theme - supplement: scale_color</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="scale_fill_nima.html">scale_fill_nima</a></code> </p>
-          </td>
-          <td><p>Nima's ggplot2 theme - supplement: scale_fill</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="theme_jetblack.html">theme_jetblack</a></code> </p>
-          </td>
-          <td><p>A jet black ggplot2 theme with inverted colors</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="theme_nima.html">theme_nima</a></code> <code><a href="theme_nima.html">nima_theme</a></code> </p>
-          </td>
-          <td><p>Nima's ggplot2 theme</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="uniqlen.html">uniqlen</a></code> </p>
-          </td>
-          <td><p>Find Number of Unique Values</p></td>
-        </tr>
-      </tbody>
-      </table>
-    </div>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      <tr>
+        <!--  -->
+        <td>
+          <p><code><a href="absmax.html">absmax()</a></code> </p>
+        </td>
+        <td><p>Maximum of Absolute Values of Vector</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="attrnames.html">attrnames()</a></code> </p>
+        </td>
+        <td><p>Get Names of Attributes</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="bioc.html">bioc()</a></code> </p>
+        </td>
+        <td><p>Conveniently Load Bioconductor</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="clear.html">clear()</a></code> </p>
+        </td>
+        <td><p>Clear the Current Screen/Buffer</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="commas.html">commas()</a></code> </p>
+        </td>
+        <td><p>Add Commas to a Large Number</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="compFun.html">compFun()</a></code> </p>
+        </td>
+        <td><p>Compare Two Similar Objects including Missing Data Patterns.</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="discrete_by_quantile.html">discrete_by_quantile()</a></code> </p>
+        </td>
+        <td><p>Discretize a vector</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="exit.html">exit()</a></code> </p>
+        </td>
+        <td><p>Exit R Without Saving</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="factornum.html">factornum()</a></code> </p>
+        </td>
+        <td><p>Convert a Factor to Numeric</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="hweb.html">hweb()</a></code> </p>
+        </td>
+        <td><p>View HTML Version of Help Files</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="lmPlots_gg.html">lmPlots_gg()</a></code> </p>
+        </td>
+        <td><p>Linear Model Diagnostic Plots with ggplot2</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="miss_ind.html">miss_ind()</a></code> </p>
+        </td>
+        <td><p>Add missingness indicators to existing data object</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="mse.html">mse()</a></code> </p>
+        </td>
+        <td><p>Mean Squared Error (MSE)</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="objsizes.html">objsizes()</a></code> </p>
+        </td>
+        <td><p>Calculate Sizes of Objects in Workspace</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="openfile.html">openfile()</a></code> </p>
+        </td>
+        <td><p>Open a File</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="qqPlot_gg.html">qqPlot_gg()</a></code> </p>
+        </td>
+        <td><p>Quantile-Quantile Plots with ggplot2</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="qrD.html">qrD()</a></code> </p>
+        </td>
+        <td><p>The QR decomposition of a matrix</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="scale_color_nima.html">scale_color_nima()</a></code> </p>
+        </td>
+        <td><p>Nima's ggplot2 theme - supplement: scale_color</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="scale_fill_nima.html">scale_fill_nima()</a></code> </p>
+        </td>
+        <td><p>Nima's ggplot2 theme - supplement: scale_fill</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="theme_jetblack.html">theme_jetblack()</a></code> </p>
+        </td>
+        <td><p>A jet black ggplot2 theme with inverted colors</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="theme_nima.html">theme_nima()</a></code> <code><a href="theme_nima.html">nima_theme()</a></code> </p>
+        </td>
+        <td><p>Nima's ggplot2 theme</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="uniqlen.html">uniqlen()</a></code> </p>
+        </td>
+        <td><p>Find Number of Unique Values</p></td>
+      </tr>
+    </tbody>
+    </table>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -264,6 +267,8 @@
 
       </footer>
    </div>
+
+  
 
   </body>
 </html>

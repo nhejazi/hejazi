@@ -25,12 +25,15 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
 <meta property="og:title" content="Quantile-Quantile Plots with ggplot2 — qqPlot_gg" />
 
 <meta property="og:description" content="Produce standard quantile-quantile plots for modeling using ggplot2." />
 <meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -53,8 +56,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">nima</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">nima</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.5.0</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -67,7 +74,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -79,6 +86,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -86,20 +94,24 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Quantile-Quantile Plots with ggplot2</h1>
+    <small class="dont-index">Source: <a href='https://github.com/nhejazi/nima/blob/master/R/plots.R'><code>R/plots.R</code></a></small>
+    <div class="hidden name"><code>qqPlot_gg.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Produce standard quantile-quantile plots for modeling using ggplot2.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>qqPlot_gg</span>(<span class='no'>x</span>, <span class='kw'>distribution</span> <span class='kw'>=</span> <span class='st'>"norm"</span>, <span class='no'>...</span>, <span class='kw'>line.estimate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>conf</span> <span class='kw'>=</span> <span class='fl'>0.95</span>, <span class='kw'>labels</span> <span class='kw'>=</span> <span class='fu'>names</span>(<span class='no'>x</span>))</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -133,7 +145,7 @@
     <pre class="examples"><div class='input'><span class='no'>n</span> <span class='kw'>&lt;-</span> <span class='fl'>100</span>; <span class='no'>x1</span> <span class='kw'>&lt;-</span> <span class='fu'>rnorm</span>(<span class='no'>n</span>); <span class='no'>y1</span> <span class='kw'>&lt;-</span> <span class='fu'>rnorm</span>(<span class='no'>n</span>);
 <span class='no'>linmod</span> <span class='kw'>&lt;-</span> <span class='fu'>lm</span>(<span class='no'>y1</span> ~ <span class='no'>x1</span>)
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='no'>linmod</span>$<span class='no'>residuals</span>
-<span class='fu'>qqPlot_gg</span>(<span class='no'>x</span>)</div><div class='img'><img src='qqPlot_gg-1.png' alt='' width='700' height='432.632880098887' /></div></pre>
+<span class='fu'>qqPlot_gg</span>(<span class='no'>x</span>)</div><div class='img'><img src='qqPlot_gg-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -157,6 +169,8 @@
 
       </footer>
    </div>
+
+  
 
   </body>
 </html>

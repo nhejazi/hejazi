@@ -25,12 +25,15 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
 <meta property="og:title" content="Calculate Sizes of Objects in Workspace — objsizes" />
 
 <meta property="og:description" content="Calculate the sizes of all of the objects in the workspace." />
 <meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -53,8 +56,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">nima</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">nima</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.5.0</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -67,7 +74,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -79,6 +86,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -86,19 +94,23 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Calculate Sizes of Objects in Workspace</h1>
+    <small class="dont-index">Source: <a href='https://github.com/nhejazi/nima/blob/master/R/objsizes.R'><code>R/objsizes.R</code></a></small>
+    <div class="hidden name"><code>objsizes.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Calculate the sizes of all of the objects in the workspace.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>objsizes</span>(<span class='no'>obj</span>, <span class='kw'>bysize</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -123,9 +135,7 @@ megabytes (Mb). The row names are the names of the objects.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>print</span>(<span class='no'>output</span> <span class='kw'>&lt;-</span> <span class='fu'>objsizes</span>())</div><div class='output co'>#&gt; [1] name Mb  
-#&gt; &lt;0 rows&gt; (or 0-length row.names)</div><span class='co'># NOT RUN {</span>
-<span class='fu'>sum</span>(<span class='no'>output</span>)
-<span class='co'># }</span></pre>
+#&gt; &lt;0 rows&gt; (or 0-length row.names)</div><div class='input'><span class='fu'>sum</span>(<span class='no'>output</span>)</div><div class='output co'>#&gt; <span class='error'>Error in FUN(X[[i]], ...): only defined on a data frame with all numeric variables</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -153,6 +163,8 @@ megabytes (Mb). The row names are the names of the objects.</p>
 
       </footer>
    </div>
+
+  
 
   </body>
 </html>

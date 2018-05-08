@@ -2,7 +2,7 @@
 % Please edit documentation in R/missing_ind.R
 \name{miss_ind}
 \alias{miss_ind}
-\title{Add missingness indicators to existing data.frame}
+\title{Add missingness indicators to existing data object}
 \usage{
 miss_ind(data, prefix = "miss_")
 }

@@ -23,5 +23,5 @@ Calls \code{\link[utils]{object.size}} to get the sizes of a list of objects.
 }
 \examples{
 print(output <- objsizes())
-\dontrun{sum(output)}
+\donttest{sum(output)}
 }

@@ -17,5 +17,5 @@
 #' error <- mse(prediction = pred, outcome = test_y)
 #
 mse <- function(prediction, outcome) {
-  mean((prediction - outcome) ^ 2)
+  mean((prediction - outcome)^2)
 }
