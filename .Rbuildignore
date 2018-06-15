@@ -2,8 +2,9 @@
 ^\.Rproj\.user$
 ^\.gitignore$
 ^\.travis\.yml$
-^\.codecov\.yml$
 ^appveyor\.yml$
+^codecov\.yml$
+^_pkgdown\.yml$
 ^cran-comments\.md$
 ^Makefile$
 ^docs$

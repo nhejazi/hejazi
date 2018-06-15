@@ -1,0 +1,6 @@
+title: nima
+url: https://code.nimahejazi.org/nima
+template:
+  params:
+    bootswatch: readable
+
