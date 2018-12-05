@@ -58,6 +58,11 @@ clear <- function() system("clear")
 #' @examples
 #' \donttest{openfile("myplot.pdf")}
 #
-openfile <- function(file) {
-  system(paste("open", file))
+openfile<-function(file) {
+  if(.Platform$OS.type  == "unix") {
+    system(paste("xdg-open",  file))
+  } else { ## windows
+    system(paste("open",  file))
+  }
 }
+
