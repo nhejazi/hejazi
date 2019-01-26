@@ -13,5 +13,8 @@ Clear the screen with a call to \code{\link[base]{system}} and \code{clear}.
 This function is merely a call to \code{system("clear")}
 }
 \examples{
-\donttest{system("clear")}
+\donttest{
+system("clear")
+}
+#
 }

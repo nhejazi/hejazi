@@ -65,14 +65,14 @@ If you encounter any bugs or have any specific feature requests, please
 
 ## License
 
-© 2016-2018 [Nima S. Hejazi](https://nimahejazi.org)
+© 2016-2019 [Nima S. Hejazi](https://nimahejazi.org)
 
 The contents of this repository are distributed under the MIT license.
 See below for details:
 
     The MIT License (MIT)
     
-    Copyright (c) 2016-2018 Nima S. Hejazi
+    Copyright (c) 2016-2019 Nima S. Hejazi
     
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal

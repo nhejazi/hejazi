@@ -16,7 +16,8 @@ Vector of character strings with the names of the attributes.
 Get the names of the attributes of an input object.
 }
 \examples{
-x <- matrix(1:100, ncol=5)
+x <- matrix(1:100, ncol = 5)
 colnames(x) <- LETTERS[1:5]
 attrnames(x)
+#
 }
