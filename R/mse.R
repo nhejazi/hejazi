@@ -15,7 +15,7 @@
 #' mod <- glm(y ~ x)
 #' pred <- predict(mod, newx = as.data.frame(test_x))
 #' error <- mse(prediction = pred, outcome = test_y)
-#
+#' #
 mse <- function(prediction, outcome) {
   mean((prediction - outcome)^2)
 }

@@ -13,7 +13,7 @@
 #' @examples
 #' x <- rnorm(1000)
 #' discrete_by_quantile(x)
-#
+#' #
 discrete_by_quantile <- function(x) {
   if (class(x) != "factor") {
     as.numeric(gtools::quantcut(x))

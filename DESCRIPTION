@@ -1,6 +1,6 @@
 Package: nima
 Title: Nima Hejazi's R Toolbox
-Version: 0.5.0
+Version: 0.5.1
 Authors@R: c(
     person("Nima", "Hejazi", email = "nh@nimahejazi.org",
            role = c("aut", "cre", "cph"),
@@ -28,14 +28,16 @@ Imports:
     ggplot2,
     scales,
     plyr,
+    dplyr,
     grid
 Suggests:
     knitr,
     roxygen2,
-    testthat
+    testthat,
+    tibble
 License: MIT + file LICENSE
 URL: https://github.com/nhejazi/nima
 BugReports: https://github.com/nhejazi/nima/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 6.1.1

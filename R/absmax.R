@@ -12,7 +12,7 @@
 #' @examples
 #' x <- c(5, 3, -9, -100, 3.14159, 7.5)
 #' absmax(x)
-#
+#' #
 absmax <- function(x, na.rm = FALSE) {
   max(abs(x), na.rm = na.rm)
 }

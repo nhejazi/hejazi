@@ -16,5 +16,7 @@ Open a file using \code{\link[base]{system}} and \code{open}.
 Open files from R by using the default operating system program.
 }
 \examples{
-\donttest{openfile("myplot.pdf")}
+\dontrun{
+openfile("myplot.pdf")
+}
 }

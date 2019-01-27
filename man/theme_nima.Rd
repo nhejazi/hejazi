@@ -27,7 +27,6 @@ library(ggplot2)
 p <- ggplot(mtcars, aes(y = mpg, x = disp, color = factor(cyl)))
 p <- p + geom_point() + scale_fill_nima() + scale_color_nima() + theme_nima()
 p
-
 }
 \seealso{
 \code{\link[ggplot2]{theme}}

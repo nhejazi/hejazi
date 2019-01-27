@@ -14,10 +14,12 @@
 #' A list of two matrices: Q and R.
 #'
 #' @examples
-#' hilbert <- function(n) { i <- 1:n; 1/outer(i-1,i,"+") }
-#' h5 <- hilbert(5);
+#' hilbert <- function(n) {
+#'   i <- 1:n
+#'   1 / outer(i - 1, i, "+")
+#' }
+#' h5 <- hilbert(5)
 #' qrD(h5)
-#'
 #' @seealso
 #' \code{\link[base]{qr}}
 #

@@ -24,7 +24,6 @@ library(ggplot2)
 p <- ggplot(mtcars, aes(y = mpg, x = disp, color = factor(cyl)))
 p <- p + geom_point() + theme_jetblack()
 p
-
 }
 \seealso{
 \code{\link[ggplot2]{theme}}
