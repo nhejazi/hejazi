@@ -30,4 +30,5 @@ y1 <- rnorm(n)
 linmod <- lm(y1 ~ x1)
 x <- linmod$residuals
 qq_plot(x)
+#
 }
