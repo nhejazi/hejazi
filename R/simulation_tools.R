@@ -1,5 +1,5 @@
 utils::globalVariables(c(
-  "param_est", "param_var", "ci_lwr", "ci_upr", "n_sim",
+  "param_est", "param_var", "param_se", "ci_lwr", "ci_upr", "n_sim",
   "err", "est", "type"
 ))
 
@@ -24,14 +24,14 @@ utils::globalVariables(c(
 #' @export
 #'
 #' @examples
-#' n_sim <- 100
+#' n_sim <- 1000
 #' n_obs <- c(100, 10000)
 #' mu <- 2
 #' sim_results <- lapply(n_obs, function(sample_size) {
 #'   estimator_sim <- lapply(seq_len(n_sim), function(iter) {
 #'     y_obs <- rnorm(sample_size, mu)
 #'     est_param <- mean(y_obs)
-#'     est_var <- var(y_obs)
+#'     est_var <- var(y_obs) / sample_size
 #'     estimate <- tibble::as_tibble(list(
 #'       param_est = est_param,
 #'       param_var = est_var
@@ -43,22 +43,25 @@ utils::globalVariables(c(
 #' })
 #' sim_summary <- lapply(sim_results, summarize_sim, truth = mu)
 #' #
-summarize_sim <- function(simulation_results, truth, ci_level = 0.95) {
+summarize_sim <- function(simulation_results,
+                          truth,
+                          ci_level = 0.95) {
   # check that parameter estimate and variance estimate are the only columns
   assertthat::assert_that(all.equal(
     colnames(simulation_results),
     c("param_est", "param_var")
   ))
 
+  # multiplier for creating confidence intervals
+  ci_mult <- abs(stats::qnorm(p = (1 - ci_level) / 2))
+
   # compute simulation-based inference
   results_with_cis <- simulation_results %>%
     dplyr::mutate(
-      param_var = param_var / sqrt(dplyr::n()),
-      ci_lwr = param_est - (param_var *
-        abs(stats::qnorm(p = (1 - ci_level) / 2))),
-      ci_upr = param_est + (param_var *
-        abs(stats::qnorm(p = (1 - ci_level) / 2))),
-      covers = (ci_lwr <= truth & truth <= ci_upr),
+      param_se = sqrt(param_var),
+      ci_lwr = param_est - param_se * ci_mult,
+      ci_upr = param_est + param_se * ci_mult,
+      covers = (ci_lwr <= truth & truth <= ci_upr)
     )
 
   # compute simulation statistics and errors of simulation statistics
@@ -69,20 +72,18 @@ summarize_sim <- function(simulation_results, truth, ci_level = 0.95) {
       n_sim = dplyr::n(),
       est = mean(param_est - truth),
       err = sqrt(stats::var(param_est - truth) / n_sim),
-      ci_lwr = mean(param_est - truth) - err *
-        abs(stats::qnorm(p = (1 - ci_level) / 2)),
-      ci_upr = mean(param_est - truth) + err *
-        abs(stats::qnorm(p = (1 - ci_level) / 2)),
+      ci_lwr = est - err * ci_mult,
+      ci_upr = est + err * ci_mult,
       type = "bias"
     )
   ## summary statistics for Monte Carlo variance and relevant statistics
   var_summary <- results_with_cis %>%
     dplyr::summarise(
       n_sim = dplyr::n(),
-      est = stats::var(param_est),
+      est = mean((param_est - mean(param_est))^2),
       err = sqrt(stats::var((param_est - mean(param_est))^2) / n_sim),
-      ci_lwr = est - err * abs(stats::qnorm(p = (1 - ci_level) / 2)),
-      ci_upr = est + err * abs(stats::qnorm(p = (1 - ci_level) / 2)),
+      ci_lwr = est - err * ci_mult,
+      ci_upr = est + err * ci_mult,
       type = "mc_var"
     )
   ## summary statistics for MSE and relevant statistics
@@ -90,10 +91,10 @@ summarize_sim <- function(simulation_results, truth, ci_level = 0.95) {
     dplyr::summarise(
       n_sim = dplyr::n(),
       est = (mean(param_est - truth))^2 + stats::var(param_est),
-      err = sqrt(stats::var(stats::var(param_est) + (param_est - truth)^2) /
+      err = sqrt(stats::var((param_est - truth)^2 + stats::var(param_est)) /
         n_sim),
-      ci_lwr = est - err * abs(stats::qnorm(p = (1 - ci_level) / 2)),
-      ci_upr = est + err * abs(stats::qnorm(p = (1 - ci_level) / 2)),
+      ci_lwr = est - err * ci_mult,
+      ci_upr = est + err * ci_mult,
       type = "mse"
     )
   # create output object with simulation summary statistics

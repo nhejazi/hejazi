@@ -25,14 +25,14 @@ computed to summarize the simulation.}
 Summarize Simulations Results
 }
 \examples{
-n_sim <- 100
+n_sim <- 1000
 n_obs <- c(100, 10000)
 mu <- 2
 sim_results <- lapply(n_obs, function(sample_size) {
   estimator_sim <- lapply(seq_len(n_sim), function(iter) {
     y_obs <- rnorm(sample_size, mu)
     est_param <- mean(y_obs)
-    est_var <- var(y_obs)
+    est_var <- var(y_obs) / sample_size
     estimate <- tibble::as_tibble(list(
       param_est = est_param,
       param_var = est_var

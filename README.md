@@ -34,8 +34,8 @@ research and scientific computing. This package is made public for my
 own convenience, with no guarantees whatsoever – *caveat emptor:* use
 `nima` only at your own risk. Since this [R](https://www.r-project.org/)
 package is a quite eclectic collection of tools, consider consulting the
-website accompanying the package
-[here](http://code.nimahejazi.org/nima).
+documentation website accompanying the package:
+<https://code.nimahejazi.org/nima>.
 
 -----
 
