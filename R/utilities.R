@@ -24,7 +24,7 @@ exit <- function() q("no")
 #' \donttest{
 #' hweb(read.table)
 #' }
-#' 
+#'
 #' @seealso
 #' \code{\link[utils]{help}}, \code{\link[utils]{help.start}}
 #
@@ -45,7 +45,7 @@ hweb <- function(...) {
 #' \donttest{
 #' system("clear")
 #' }
-#' #
+#
 clear <- function() system("clear")
 
 
@@ -60,10 +60,10 @@ clear <- function() system("clear")
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' openfile("myplot.pdf")
 #' }
-#' #
+#
 openfile <- function(file) {
   if (.Platform$OS.type == "unix") {
     system(paste("xdg-open", file))

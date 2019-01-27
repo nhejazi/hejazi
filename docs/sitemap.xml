@@ -31,9 +31,6 @@
     <loc>https://code.nimahejazi.org/nima/reference/hweb.html</loc>
   </url>
   <url>
-    <loc>https://code.nimahejazi.org/nima/reference/lmPlots_gg.html</loc>
-  </url>
-  <url>
     <loc>https://code.nimahejazi.org/nima/reference/miss_ind.html</loc>
   </url>
   <url>
@@ -43,7 +40,10 @@
     <loc>https://code.nimahejazi.org/nima/reference/openfile.html</loc>
   </url>
   <url>
-    <loc>https://code.nimahejazi.org/nima/reference/qqPlot_gg.html</loc>
+    <loc>https://code.nimahejazi.org/nima/reference/plot.lm.html</loc>
+  </url>
+  <url>
+    <loc>https://code.nimahejazi.org/nima/reference/qq_plot.html</loc>
   </url>
   <url>
     <loc>https://code.nimahejazi.org/nima/reference/qrD.html</loc>
@@ -53,6 +53,12 @@
   </url>
   <url>
     <loc>https://code.nimahejazi.org/nima/reference/scale_fill_nima.html</loc>
+  </url>
+  <url>
+    <loc>https://code.nimahejazi.org/nima/reference/sim_plot.html</loc>
+  </url>
+  <url>
+    <loc>https://code.nimahejazi.org/nima/reference/summarize_sim.html</loc>
   </url>
   <url>
     <loc>https://code.nimahejazi.org/nima/reference/theme_jetblack.html</loc>
