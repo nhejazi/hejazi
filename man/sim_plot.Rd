@@ -7,13 +7,19 @@
 sim_plot(x, ..., sample_sizes, stat = c("bias", "mc_var", "mse"))
 }
 \arguments{
-\item{x}{A \code{list} of simulation summary objects.}
+\item{x}{A \code{list} of several simulation summary objects, of class
+\code{simulation_stats}.}
 
-\item{...}{...}
+\item{...}{Extra arguments currently ignored.}
 
-\item{sample_sizes}{...}
+\item{sample_sizes}{A \code{numeric} vector giving the sample sizes at which
+each of the simulations in the input \code{x} was performed. There should be
+one unique sample size corresponding to each element of \code{x}.}
 
-\item{stat}{...}
+\item{stat}{A \code{character} indicating which of three simulation summary
+statistics for which to generate a plot. Options are currently limited to
+bias (\code{"bias"}), variance (\code{"mc_var"}), and mean-squared error
+(\code{"mse"}).}
 }
 \description{
 Visualize Summaries of Simulation Results

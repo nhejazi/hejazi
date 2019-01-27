@@ -7,11 +7,19 @@
 summarize_sim(simulation_results, truth, ci_level = 0.95)
 }
 \arguments{
-\item{simulation_results}{...}
+\item{simulation_results}{A \code{data.frame}, \code{tibble} or similar with
+exactly two columns named \code{"param_est"} and \code{"param_var"} giving
+the estimate of a parameter of interest and estimate of its variance (based
+on a valid variance estimator specific to that parameter).Each row of this
+data structure corresponds to the parameter estimate and variance for a
+single iteration of several simulations.}
 
-\item{truth}{...}
+\item{truth}{A \code{numeric} value giving the true value of the parameter
+of interest in the simulation setting.}
 
-\item{ci_level}{...}
+\item{ci_level}{A \code{numeric} value giving the level of the confidence
+intervals to be generated around the parameter estimates and statistics
+computed to summarize the simulation.}
 }
 \description{
 Summarize Simulations Results

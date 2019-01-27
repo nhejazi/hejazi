@@ -1,11 +1,21 @@
-utils::globalVariables(c("param_est", "param_var", "ci_lwr", "ci_upr", "n_sim",
-                         "err", "est", "type"))
+utils::globalVariables(c(
+  "param_est", "param_var", "ci_lwr", "ci_upr", "n_sim",
+  "err", "est", "type"
+))
 
 #' Summarize Simulations Results
 #'
-#' @param simulation_results ...
-#' @param truth ...
-#' @param ci_level ...
+#' @param simulation_results A \code{data.frame}, \code{tibble} or similar with
+#'  exactly two columns named \code{"param_est"} and \code{"param_var"} giving
+#'  the estimate of a parameter of interest and estimate of its variance (based
+#'  on a valid variance estimator specific to that parameter).Each row of this
+#'  data structure corresponds to the parameter estimate and variance for a
+#'  single iteration of several simulations.
+#' @param truth A \code{numeric} value giving the true value of the parameter
+#'  of interest in the simulation setting.
+#' @param ci_level A \code{numeric} value giving the level of the confidence
+#'  intervals to be generated around the parameter estimates and statistics
+#'  computed to summarize the simulation.
 #'
 #' @importFrom stats var qnorm
 #' @importFrom assertthat assert_that
@@ -110,10 +120,16 @@ utils::globalVariables(c("stat_est", "stat_type", "lwr_ci", "upr_ci", "n_samp"))
 
 #' Visualize Summaries of Simulation Results
 #'
-#' @param x A \code{list} of simulation summary objects.
-#' @param ... ...
-#' @param sample_sizes ...
-#' @param stat ...
+#' @param x A \code{list} of several simulation summary objects, of class
+#'  \code{simulation_stats}.
+#' @param ... Extra arguments currently ignored.
+#' @param sample_sizes A \code{numeric} vector giving the sample sizes at which
+#'  each of the simulations in the input \code{x} was performed. There should be
+#'  one unique sample size corresponding to each element of \code{x}.
+#' @param stat A \code{character} indicating which of three simulation summary
+#'  statistics for which to generate a plot. Options are currently limited to
+#'  bias (\code{"bias"}), variance (\code{"mc_var"}), and mean-squared error
+#'  (\code{"mse"}).
 #'
 #' @importFrom assertthat assert_that
 #' @importFrom dplyr "%>%" mutate filter
