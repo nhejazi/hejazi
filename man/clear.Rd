@@ -16,4 +16,5 @@ This function is merely a call to \code{system("clear")}
 \donttest{
 system("clear")
 }
+#
 }
