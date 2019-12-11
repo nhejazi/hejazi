@@ -2,7 +2,7 @@
 % Please edit documentation in R/risk.R
 \name{nll}
 \alias{nll}
-\title{Risk for Cross-Entropy (Negative Log-Likelihood) Loss}
+\title{Risk for Cross-Entropy Loss}
 \usage{
 nll(prediction, outcome)
 }

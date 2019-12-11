@@ -24,7 +24,6 @@ utils::globalVariables(c("ord.x", "z", "lower", "upper", "label"))
 #' linmod <- lm(y1 ~ x1)
 #' x <- linmod$residuals
 #' qq_plot(x)
-#'
 qq_plot <- function(x, distribution = "norm", ..., line.estimate = NULL,
                     conf = 0.95, labels = names(x)) {
   q.function <- eval(parse(text = paste0("q", distribution)))
@@ -79,7 +78,7 @@ utils::globalVariables(c(
   ".fitted", ".resid", ".stdresid", ".cooksd", ".hat"
 ))
 
-#' Linear Model Diagnostic Plots with ggplot2
+#' Linear Model Diagnostic Plots
 #'
 #' Produce standard diagnostic plots for linear models using ggplot2.
 #'
@@ -92,16 +91,13 @@ utils::globalVariables(c(
 #'
 #' @export
 #'
-#' @method plot lm
-#'
 #' @examples
 #' n <- 100
 #' x1 <- rnorm(n)
 #' y1 <- rnorm(n)
 #' linmod <- lm(y1 ~ x1)
 #' plot(linmod)
-#'
-plot.lm <- function(x, ...) {
+lm_plot <- function(x, ...) {
   p1 <- ggplot2::ggplot(x, ggplot2::aes(x = .fitted, y = .resid)) +
     ggplot2::geom_point() +
     ggplot2::stat_smooth(method = "loess", se = FALSE) +

@@ -1,6 +1,6 @@
 Package: nima
 Title: Nima Hejazi's R Toolbox
-Version: 0.6.0.9000
+Version: 0.6.1
 Authors@R: c(
     person("Nima", "Hejazi", email = "nh@nimahejazi.org",
            role = c("aut", "cre", "cph"),
