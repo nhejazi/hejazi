@@ -2,7 +2,7 @@
 % Please edit documentation in R/risk.R
 \name{mse}
 \alias{mse}
-\title{Mean Squared Error (MSE) for L2 Loss}
+\title{Mean Squared Error}
 \usage{
 mse(prediction, outcome)
 }

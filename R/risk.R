@@ -1,4 +1,4 @@
-#' Mean Squared Error (MSE) for L2 Loss
+#' Mean Squared Error
 #'
 #' Compute the mean squared error (risk under L2 loss).
 #'
@@ -20,7 +20,7 @@ mse <- function(prediction, outcome) {
   return(mean(emp_loss))
 }
 
-#' Risk for Cross-Entropy (Negative Log-Likelihood) Loss
+#' Risk for Cross-Entropy Loss
 #'
 #' Compute the empirical risk under cross-entropy loss for binary predictions.
 #'

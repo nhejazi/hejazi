@@ -1,3 +1,11 @@
+# nima 0.6.1
+
+Last updated on December 11, 2019
+
+* Fixed warnings from CRAN checks:
+  * `plot.lm()` - renamed to `lm_plot()` to avoid method override
+* Bump of version number to 0.6.1 for updated release on CRAN
+
 # nima 0.6.0
 
 Last updated on December 10, 2019
