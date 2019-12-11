@@ -20,5 +20,4 @@ Discretizes a non-factor input vector and returns the result as numeric.
 \examples{
 x <- rnorm(1000)
 discrete_by_quantile(x)
-
 }

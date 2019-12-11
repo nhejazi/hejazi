@@ -22,5 +22,4 @@ test_y <- test_x^2
 mod <- glm(y ~ x)
 pred <- predict(mod, newx = as.data.frame(test_x))
 error <- mse(prediction = pred, outcome = test_y)
-
 }

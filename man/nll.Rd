@@ -23,5 +23,4 @@ test_y <- rbinom(n_obs, 1, plogis(test_x^2))
 mod <- glm(y ~ x, family = "binomial")
 pred <- predict(mod, newx = as.data.frame(test_x), type = "response")
 error <- nll(prediction = unname(pred), outcome = test_y)
-
 }

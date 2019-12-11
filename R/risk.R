@@ -15,7 +15,6 @@
 #' mod <- glm(y ~ x)
 #' pred <- predict(mod, newx = as.data.frame(test_x))
 #' error <- mse(prediction = pred, outcome = test_y)
-#'
 mse <- function(prediction, outcome) {
   emp_loss <- (prediction - outcome)^2
   return(mean(emp_loss))
@@ -39,9 +38,8 @@ mse <- function(prediction, outcome) {
 #' mod <- glm(y ~ x, family = "binomial")
 #' pred <- predict(mod, newx = as.data.frame(test_x), type = "response")
 #' error <- nll(prediction = unname(pred), outcome = test_y)
-#'
 nll <- function(prediction, outcome) {
   emp_loss <- (-log(prediction) * outcome) + (-log(1 - prediction) *
-                                              (1 - outcome))
+    (1 - outcome))
   return(mean(emp_loss))
 }

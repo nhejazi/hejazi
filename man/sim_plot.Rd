@@ -45,5 +45,4 @@ sim_results <- lapply(n_obs, function(sample_size) {
 sim_summary <- lapply(sim_results, summarize_sim, truth = mu)
 p_sim_summary <- sim_plot(sim_summary, sample_sizes = n_obs, stat = "mse")
 p_sim_summary
-
 }

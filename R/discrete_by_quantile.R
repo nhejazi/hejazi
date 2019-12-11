@@ -14,7 +14,6 @@
 #' @examples
 #' x <- rnorm(1000)
 #' discrete_by_quantile(x)
-#'
 discrete_by_quantile <- function(x, ...) {
   if (!is.factor(x)) {
     as.numeric(gtools::quantcut(x, ...))

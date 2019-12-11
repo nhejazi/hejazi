@@ -20,5 +20,4 @@ x1 <- rnorm(n)
 y1 <- rnorm(n)
 linmod <- lm(y1 ~ x1)
 plot(linmod)
-
 }
