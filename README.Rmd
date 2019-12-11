@@ -35,7 +35,7 @@ __Author:__ [Nima Hejazi](https://nimahejazi.org)
 [R/nima](http://code.nimahejazi.org/nima) is a collection of small tools built
 to help out with statistical and scientific computing for research purposes.
 While these tools exist as collateral damage from pursuing research, the hope
-is that this package may be useful to others. For more information, consider =
+is that this package may be useful to others. For more information, consider
 consulting the documentation website accompanying the package:
 https://code.nimahejazi.org/nima.
 
@@ -94,4 +94,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-

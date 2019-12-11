@@ -15,6 +15,6 @@
 * Nothing to report.
 
 ## Additional Notes
-* Updated submission of package, from version v0.5.1 to v0.6.0
+* Updated submission of package, from version v0.5.0 to v0.6.0
 * This releases fixes broken functionality and unit tests in anticipation of R
   4.0.0: inheritance of Array class by Matrix objects, re: use of class().

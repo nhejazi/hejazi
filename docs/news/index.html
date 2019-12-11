@@ -110,12 +110,103 @@
       <small>Source: <a href='https://github.com/nhejazi/nima/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
+    <div id="nima-0-6-0" class="section level1">
+<h1 class="page-header">
+<a href="#nima-0-6-0" class="anchor"></a>nima 0.6.0<small> Unreleased </small>
+</h1>
+<p>Last updated on December 10, 2019</p>
+<ul>
+<li>Fixes for compatibility with R 4.0.0, including removal or re-writing of functions making use of <code><a href="https://rdrr.io/r/base/class.html">class()</a></code>
+</li>
+<li>Functions removed or renamed:
+<ul>
+<li>
+<code>compFun()</code> - removed</li>
+<li>
+<code>factornum()</code> - renamed to <code><a href="../reference/factor_to_num.html">factor_to_num()</a></code>
+</li>
+<li>
+<code>qrD()</code> - removed</li>
+</ul>
+</li>
+<li>Functions altered:
+<ul>
+<li>
+<code><a href="../reference/discrete_by_quantile.html">discrete_by_quantile()</a></code> - now uses <code><a href="https://rdrr.io/r/base/factor.html">is.factor()</a></code> instead of <code><a href="https://rdrr.io/r/base/class.html">class()</a></code>
+</li>
+</ul>
+</li>
+<li>Functions added:
+<ul>
+<li>
+<code><a href="../reference/nll.html">nll()</a></code> - risk under cross-entropy loss</li>
+</ul>
+</li>
+<li>Bump of version number to 0.6.0 for updated release on CRAN</li>
+</ul>
+</div>
+    <div id="nima-0-5-0" class="section level1">
+<h1 class="page-header">
+<a href="#nima-0-5-0" class="anchor"></a>nima 0.5.0<small> 2018-05-21 </small>
+</h1>
+<p>Last updated on May 02, 2018</p>
+<ul>
+<li>Fix a broken unit test for R 3.5.0, changing the use of <code><a href="https://rdrr.io/r/base/identical.html">identical()</a></code> for a combination of <code>expect_true()</code> and <code><a href="https://rdrr.io/r/base/sets.html">setequal()</a></code>
+</li>
+</ul>
+</div>
+    <div id="nima-0-4-7" class="section level1">
+<h1 class="page-header">
+<a href="#nima-0-4-7" class="anchor"></a>nima 0.4.7<small> Unreleased </small>
+</h1>
+<p>Last updated on March 23, 2018</p>
+<ul>
+<li>Fix a broken test (due to use of <code><a href="https://rdrr.io/r/base/all.equal.html">all.equal()</a></code> instead of <code><a href="https://rdrr.io/r/base/identical.html">identical()</a></code>) in R-devel, based on report by CRAN</li>
+<li>Add hex sticker for package based on art work by GL</li>
+</ul>
+</div>
+    <div id="nima-0-4-0" class="section level1">
+<h1 class="page-header">
+<a href="#nima-0-4-0" class="anchor"></a>nima 0.4.0<small> Unreleased </small>
+</h1>
+<p>Last updated on September 20, 2016</p>
+<ul>
+<li>Addition of several functions, re-written <code>DESCRIPTION</code> file.</li>
+<li>Update of package version to v0.4.0.</li>
+<li>This version update to be released on CRAN.</li>
+</ul>
+</div>
+    <div id="nima-0-3-5" class="section level1">
+<h1 class="page-header">
+<a href="#nima-0-3-5" class="anchor"></a>nima 0.3.5<small> Unreleased </small>
+</h1>
+<p>Last updated on July 05, 2016</p>
+<ul>
+<li>Major changes, including addition of unit tests and Travis-CI coverage, added to the package for v0.3.5.</li>
+<li>This version update not to be released on CRAN.</li>
+</ul>
+</div>
+    <div id="nima-0-3-0" class="section level1">
+<h1 class="page-header">
+<a href="#nima-0-3-0" class="anchor"></a>nima 0.3.0<small> 2016-03-25 </small>
+</h1>
+<p>Last updated on March 25, 2016</p>
+<ul>
+<li>The first public release of this package (v0.3.0) is made available on CRAN.</li>
+</ul>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <div id="tocnav">
       <h2>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
+        <li><a href="#nima-0-6-0">0.6.0</a></li>
+        <li><a href="#nima-0-5-0">0.5.0</a></li>
+        <li><a href="#nima-0-4-7">0.4.7</a></li>
+        <li><a href="#nima-0-4-0">0.4.0</a></li>
+        <li><a href="#nima-0-3-5">0.3.5</a></li>
+        <li><a href="#nima-0-3-0">0.3.0</a></li>
       </ul>
     </div>
   </div>

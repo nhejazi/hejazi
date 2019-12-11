@@ -32,7 +32,7 @@ license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://openso
 built to help out with statistical and scientific computing for research
 purposes. While these tools exist as collateral damage from pursuing
 research, the hope is that this package may be useful to others. For
-more information, consider = consulting the documentation website
+more information, consider consulting the documentation website
 accompanying the package: <https://code.nimahejazi.org/nima>.
 
 -----
