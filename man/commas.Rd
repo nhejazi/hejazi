@@ -17,5 +17,4 @@ Convert a number to a string, with commas inserted at every 3rd digit.
 }
 \examples{
 commas(c(2300, 9000, 21456, 987654890, 1256787, 345765, 1432))
-#
 }

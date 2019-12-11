@@ -10,11 +10,10 @@
 #'
 #' @examples
 #' x <- factor(c(3, 4, 9, 4, 9), levels = c(3, 4, 9))
-#' factornum(x)
-#' #
-factornum <- function(x) {
-  factornames <- names(x)
+#' factor_to_num(x)
+factor_to_num <- function(x) {
+  names_factor <- names(x)
   x <- as.numeric(as.character(x))
-  names(x) <- factornames
+  names(x) <- names_factor
   return(x)
 }

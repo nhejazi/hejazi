@@ -32,13 +32,12 @@ __Author:__ [Nima Hejazi](https://nimahejazi.org)
 
 ## What's `nima`?
 
-[R/nima](http://code.nimahejazi.org/nima) is a miscellaneous collection of tools
-that have proven useful to me over years of statistical research and scientific
-computing. This package is made public for my own convenience, with no
-guarantees whatsoever -- _caveat emptor:_ use `nima` only at your own risk.
-Since this [R](https://www.r-project.org/) package is a quite eclectic
-collection of tools, consider consulting the documentation website accompanying
-the package: https://code.nimahejazi.org/nima.
+[R/nima](http://code.nimahejazi.org/nima) is a collection of small tools built
+to help out with statistical and scientific computing for research purposes.
+While these tools exist as collateral damage from pursuing research, the hope
+is that this package may be useful to others. For more information, consider
+consulting the documentation website accompanying the package:
+https://code.nimahejazi.org/nima.
 
 ---
 
@@ -51,10 +50,10 @@ install.packages("nima")
 ```
 
 Install the stable _development version_ from GitHub via
-[`devtools`](https://www.rstudio.com/products/rpackages/devtools/):
+[`remotes`](https://CRAN.R-project.org/package=remotes):
 
 ```{r gh-master-install, eval = FALSE}
-devtools::install_github("nhejazi/nima")
+remotes::install_github("nhejazi/nima")
 ```
 
 ---
@@ -95,4 +94,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-

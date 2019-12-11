@@ -15,7 +15,7 @@ test:
 	Rscript -e "devtools::test()"
 
 cov:
-	Rscript -e "covr::package_coverage(type = 'all', combine_types = FALSE, line_exclusions = list('R/plots.R', 'R/theme_nima.R', 'R/theme_jetblack.R', 'R/bioc.R', 'R/newpkgs.R', 'R/newprojs.R', 'R/utilities.R'))"
+	Rscript -e "covr::package_coverage(type = 'all', combine_types = FALSE, line_exclusions = list('R/plots.R', 'R/theme_nima.R', 'R/theme_jetblack.R', 'R/utils.R'))"
 
 doc:
 	Rscript -e "devtools::document()"
@@ -28,4 +28,3 @@ buildfast:
 
 style:
 	Rscript -e "styler::style_pkg()"
-

@@ -1,6 +1,6 @@
 utils::globalVariables(c("ord.x", "z", "lower", "upper", "label"))
 
-#' Quantile-Quantile Plots with ggplot2
+#' Quantile-Quantile Plots
 #'
 #' Produce standard quantile-quantile plots for modeling using ggplot2.
 #'
@@ -24,7 +24,7 @@ utils::globalVariables(c("ord.x", "z", "lower", "upper", "label"))
 #' linmod <- lm(y1 ~ x1)
 #' x <- linmod$residuals
 #' qq_plot(x)
-#' #
+#'
 qq_plot <- function(x, distribution = "norm", ..., line.estimate = NULL,
                     conf = 0.95, labels = names(x)) {
   q.function <- eval(parse(text = paste0("q", distribution)))
@@ -74,8 +74,6 @@ qq_plot <- function(x, distribution = "norm", ..., line.estimate = NULL,
 
 
 ################################################################################
-## NEXT FUNCTION                                                              ##
-################################################################################
 
 utils::globalVariables(c(
   ".fitted", ".resid", ".stdresid", ".cooksd", ".hat"
@@ -102,7 +100,7 @@ utils::globalVariables(c(
 #' y1 <- rnorm(n)
 #' linmod <- lm(y1 ~ x1)
 #' plot(linmod)
-#' #
+#'
 plot.lm <- function(x, ...) {
   p1 <- ggplot2::ggplot(x, ggplot2::aes(x = .fitted, y = .resid)) +
     ggplot2::geom_point() +

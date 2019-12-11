@@ -1,4 +1,3 @@
-library(nima)
 context("Finding the number of unique elements")
 
 test_that("uniqlen finds the number of unique elements", {

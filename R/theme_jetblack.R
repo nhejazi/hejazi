@@ -18,9 +18,12 @@
 #' p
 #' @seealso
 #' \code{\link[ggplot2]{theme}}
-#
+#'
 theme_jetblack <- function(base_size = 12, base_family = "") {
-  ggplot2::theme_grey(base_size = base_size, base_family = base_family) %+replace%
+  ggplot2::theme_grey(
+    base_size = base_size,
+    base_family = base_family
+  ) %+replace%
     ggplot2::theme(
       # Specify axis options
       axis.line = ggplot2::element_blank(),
