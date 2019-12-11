@@ -1,4 +1,3 @@
-library(nima)
 context("Discretizing vectors by quantile")
 
 test_that("range of discretization matches quantiles for numerics", {

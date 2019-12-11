@@ -1,4 +1,3 @@
-library(nima)
 context("Checking insertion of commas in large numbers")
 
 test_that("commas edits a single large number as expected", {

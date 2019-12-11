@@ -1,4 +1,3 @@
-library(nima)
 context("Finding absolute maximums")
 
 test_that("absmax finds the absolute maximum", {
