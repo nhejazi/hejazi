@@ -18,7 +18,6 @@ Depends:
 Imports:
     utils,
     stats,
-    survival,
     assertthat,
     ggplot2,
     ggthemes,
@@ -31,7 +30,8 @@ Suggests:
     knitr,
     roxygen2,
     testthat,
-    tibble
+    tibble,
+    stringr
 License: MIT + file LICENSE
 URL: https://github.com/nhejazi/nima
 BugReports: https://github.com/nhejazi/nima/issues
