@@ -43,5 +43,5 @@ sim_results <- lapply(n_obs, function(sample_size) {
   return(estimates)
 })
 sim_summary <- lapply(sim_results, summarize_sim, truth = mu)
-#
+
 }

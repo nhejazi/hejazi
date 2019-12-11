@@ -2,10 +2,16 @@
 % Please edit documentation in R/plots.R
 \name{qq_plot}
 \alias{qq_plot}
-\title{Quantile-Quantile Plots with ggplot2}
+\title{Quantile-Quantile Plots}
 \usage{
-qq_plot(x, distribution = "norm", ..., line.estimate = NULL,
-  conf = 0.95, labels = names(x))
+qq_plot(
+  x,
+  distribution = "norm",
+  ...,
+  line.estimate = NULL,
+  conf = 0.95,
+  labels = names(x)
+)
 }
 \arguments{
 \item{x}{A numeric vector of residuals from a generalized linear model.}
@@ -30,5 +36,5 @@ y1 <- rnorm(n)
 linmod <- lm(y1 ~ x1)
 x <- linmod$residuals
 qq_plot(x)
-#
+
 }

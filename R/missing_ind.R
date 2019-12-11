@@ -14,7 +14,7 @@
 #' data[sample(nrow(data), 3), 1] <- NA
 #' data[sample(nrow(data), 4), 2] <- NA
 #' data <- miss_ind(data)
-#' #
+#'
 miss_ind <- function(data, prefix = "miss_") {
   indicators <- sapply(data, FUN = function(col) as.numeric(is.na(col)))
   colnames(indicators) <- paste0(prefix, colnames(data))

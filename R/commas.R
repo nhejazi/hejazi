@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' commas(c(2300, 9000, 21456, 987654890, 1256787, 345765, 1432))
-#' #
+#'
 commas <- function(numbers) {
   format(numbers, big.mark = ",", scientific = FALSE, trim = TRUE)
 }

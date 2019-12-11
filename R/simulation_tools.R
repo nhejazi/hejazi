@@ -42,7 +42,7 @@ utils::globalVariables(c(
 #'   return(estimates)
 #' })
 #' sim_summary <- lapply(sim_results, summarize_sim, truth = mu)
-#' #
+#'
 summarize_sim <- function(simulation_results,
                           truth,
                           ci_level = 0.95) {
@@ -159,7 +159,7 @@ utils::globalVariables(c("stat_est", "stat_type", "lwr_ci", "upr_ci", "n_samp"))
 #' sim_summary <- lapply(sim_results, summarize_sim, truth = mu)
 #' p_sim_summary <- sim_plot(sim_summary, sample_sizes = n_obs, stat = "mse")
 #' p_sim_summary
-#' #
+#'
 sim_plot <- function(x,
                      ...,
                      sample_sizes,

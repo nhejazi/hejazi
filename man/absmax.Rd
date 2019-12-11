@@ -20,5 +20,5 @@ Take the maximum of the absolute values of an input vector.
 \examples{
 x <- c(5, 3, -9, -100, 3.14159, 7.5)
 absmax(x)
-#
+
 }

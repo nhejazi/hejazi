@@ -19,5 +19,5 @@ Open files from R by using the default operating system program.
 \dontrun{
 openfile("myplot.pdf")
 }
-#
+
 }
