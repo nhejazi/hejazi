@@ -16,16 +16,13 @@
     <loc>https://code.nimahejazi.org/nima/reference/commas.html</loc>
   </url>
   <url>
-    <loc>https://code.nimahejazi.org/nima/reference/compFun.html</loc>
-  </url>
-  <url>
     <loc>https://code.nimahejazi.org/nima/reference/discrete_by_quantile.html</loc>
   </url>
   <url>
     <loc>https://code.nimahejazi.org/nima/reference/exit.html</loc>
   </url>
   <url>
-    <loc>https://code.nimahejazi.org/nima/reference/factornum.html</loc>
+    <loc>https://code.nimahejazi.org/nima/reference/factor_to_num.html</loc>
   </url>
   <url>
     <loc>https://code.nimahejazi.org/nima/reference/hweb.html</loc>
@@ -37,6 +34,9 @@
     <loc>https://code.nimahejazi.org/nima/reference/mse.html</loc>
   </url>
   <url>
+    <loc>https://code.nimahejazi.org/nima/reference/nll.html</loc>
+  </url>
+  <url>
     <loc>https://code.nimahejazi.org/nima/reference/openfile.html</loc>
   </url>
   <url>
@@ -44,9 +44,6 @@
   </url>
   <url>
     <loc>https://code.nimahejazi.org/nima/reference/qq_plot.html</loc>
-  </url>
-  <url>
-    <loc>https://code.nimahejazi.org/nima/reference/qrD.html</loc>
   </url>
   <url>
     <loc>https://code.nimahejazi.org/nima/reference/scale_color_nima.html</loc>

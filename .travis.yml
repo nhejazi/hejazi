@@ -29,10 +29,10 @@ r_packages:
 
 r_github_packages:
   - r-lib/sessioninfo
-  - jimhester/covr
+  - r-lib/covr
 
 after_success:
-  - Rscript -e "covr::codecov(line_exclusions = list('R/plots.R', 'R/theme_nima.R', 'R/theme_jetblack.R', 'R/bioc.R', 'R/utilities.R'))"
+  - Rscript -e "covr::codecov(line_exclusions = list('R/plots.R', 'R/theme_nima.R', 'R/theme_jetblack.R', 'R/utils.R'))"
 
 on_failure:
   - "./travis-tool.sh dump_logs"
@@ -41,4 +41,3 @@ notifications:
   email:
     on_success: change
     on_failure: change
-

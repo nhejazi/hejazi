@@ -28,14 +28,12 @@ license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://openso
 
 ## What’s `nima`?
 
-[R/nima](http://code.nimahejazi.org/nima) is a miscellaneous collection
-of tools that have proven useful to me over years of statistical
-research and scientific computing. This package is made public for my
-own convenience, with no guarantees whatsoever – *caveat emptor:* use
-`nima` only at your own risk. Since this [R](https://www.r-project.org/)
-package is a quite eclectic collection of tools, consider consulting the
-documentation website accompanying the package:
-<https://code.nimahejazi.org/nima>.
+[R/nima](http://code.nimahejazi.org/nima) is a collection of small tools
+built to help out with statistical and scientific computing for research
+purposes. While these tools exist as collateral damage from pursuing
+research, the hope is that this package may be useful to others. For
+more information, consider = consulting the documentation website
+accompanying the package: <https://code.nimahejazi.org/nima>.
 
 -----
 
@@ -48,10 +46,10 @@ install.packages("nima")
 ```
 
 Install the stable *development version* from GitHub via
-[`devtools`](https://www.rstudio.com/products/rpackages/devtools/):
+[`remotes`](https://CRAN.R-project.org/package=remotes):
 
 ``` r
-devtools::install_github("nhejazi/nima")
+remotes::install_github("nhejazi/nima")
 ```
 
 -----

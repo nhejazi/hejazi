@@ -1,5 +1,5 @@
 ## Test environments
-* local OS X install, R 3.5.0
+* local Ubuntu 18.04 install, R 3.6.1
 * win-builder (devel and release)
 * travis CI (ubuntu; oldrel, release, and devel)
 * appveyor CI (windows; release only)
@@ -15,7 +15,6 @@
 * Nothing to report.
 
 ## Additional Notes
-* Updated submission of package, up from version v0.4.5 to v0.5.0
-* This releases fixes a broken unit test in R 3.5.0
-* Fixes issue mentioned in e-mail with Uwe Ligges re: submission of v0.4.7
-
+* Updated submission of package, from version v0.5.1 to v0.6.0
+* This releases fixes broken functionality and unit tests in anticipation of R
+  4.0.0: inheritance of Array class by Matrix objects, re: use of class().
