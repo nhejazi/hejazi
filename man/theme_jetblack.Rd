@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_jetblack.R
 \name{theme_jetblack}
 \alias{theme_jetblack}
-\title{A jet black ggplot2 theme with inverted colors}
+\title{A jet black theme with inverted colors}
 \usage{
 theme_jetblack(base_size = 12, base_family = "")
 }
@@ -10,14 +10,12 @@ theme_jetblack(base_size = 12, base_family = "")
 \item{base_size}{Base font size}
 
 \item{base_family}{Base font family}
-
-\item{...}{Passed to \code{\link[ggplot2]{theme}}}
 }
 \value{
 An object as returned by \code{\link[ggplot2]{theme}}
 }
 \description{
-A jet black ggplot2 theme with inverted colors
+A jet black theme with inverted colors
 }
 \examples{
 library(ggplot2)

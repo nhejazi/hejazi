@@ -1,28 +1,27 @@
-#' Nima's ggplot2 theme
+#' Nima's plotting theme
 #'
 #' Nima's ggplot2 theme: white background, colors optimized
 #'
 #' @param base_size Base font size
 #' @param base_family Base font family
-#' @param ... Passed to \code{\link[ggplot2]{theme}}
 #'
 #' @importFrom ggplot2 ggplot rel element_text element_rect element_line
 #' @importFrom ggplot2 element_blank
 #' @importFrom grid unit
 #' @importFrom ggthemes theme_foundation
 #'
-#' @export
-#'
 #' @return An object as returned by \code{\link[ggplot2]{theme}}
 #'
 #' @examples
 #' library(ggplot2)
 #' p <- ggplot(mtcars, aes(y = mpg, x = disp, color = factor(cyl)))
-#' p <- p + geom_point() + scale_fill_nima() + scale_color_nima() + theme_nima()
+#' p <- p + geom_point() + scale_fill_nima() + scale_color_nima()
+#' p <- p + theme_nima()
 #' p
 #' @seealso
 #' \code{\link[ggplot2]{theme}}
-#
+#'
+#' @export
 theme_nima <- function(base_size = 14, base_family = "Helvetica") {
   (theme_foundation(base_size = base_size, base_family = base_family)
   + theme(

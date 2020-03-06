@@ -3,7 +3,7 @@
 \name{theme_nima}
 \alias{theme_nima}
 \alias{nima_theme}
-\title{Nima's ggplot2 theme}
+\title{Nima's plotting theme}
 \usage{
 theme_nima(base_size = 14, base_family = "Helvetica")
 
@@ -13,8 +13,6 @@ nima_theme(base_size = 14, base_family = "Helvetica")
 \item{base_size}{Base font size}
 
 \item{base_family}{Base font family}
-
-\item{...}{Passed to \code{\link[ggplot2]{theme}}}
 }
 \value{
 An object as returned by \code{\link[ggplot2]{theme}}
@@ -25,7 +23,8 @@ Nima's ggplot2 theme: white background, colors optimized
 \examples{
 library(ggplot2)
 p <- ggplot(mtcars, aes(y = mpg, x = disp, color = factor(cyl)))
-p <- p + geom_point() + scale_fill_nima() + scale_color_nima() + theme_nima()
+p <- p + geom_point() + scale_fill_nima() + scale_color_nima()
+p <- p + theme_nima()
 p
 }
 \seealso{

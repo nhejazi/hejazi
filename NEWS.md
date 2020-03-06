@@ -1,3 +1,12 @@
+# nima 0.6.2
+
+Last updated on March 5, 2020
+
+* Fixed documentation warnings from CRAN checks:
+  * `theme_jetblack()` - removed unused `...` argument in documentation.
+  * `theme_nima()` - removed unused `...` argument in documentation.
+* Bump of version number to 0.6.1 for updated release on CRAN
+
 # nima 0.6.1
 
 Last updated on December 11, 2019

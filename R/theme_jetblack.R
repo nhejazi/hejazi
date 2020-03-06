@@ -1,13 +1,10 @@
-#' A jet black ggplot2 theme with inverted colors
+#' A jet black theme with inverted colors
 #'
 #' @param base_size Base font size
 #' @param base_family Base font family
-#' @param ... Passed to \code{\link[ggplot2]{theme}}
 #'
 #' @importFrom ggplot2 ggplot rel element_text element_rect element_line
 #' @importFrom ggplot2 element_blank margin "%+replace%"
-#'
-#' @export
 #'
 #' @return An object as returned by \code{\link[ggplot2]{theme}}
 #'
@@ -19,6 +16,7 @@
 #' @seealso
 #' \code{\link[ggplot2]{theme}}
 #'
+#' @export
 theme_jetblack <- function(base_size = 12, base_family = "") {
   ggplot2::theme_grey(
     base_size = base_size,
